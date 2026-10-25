@@ -1,0 +1,48 @@
+name: Build Mindful Reader APK
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Android SDK
+        uses: android-actions/setup-android@v3
+      - name: Install platform
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - name: Gradle 8.7
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.7'
+      - name: Build installable APK
+        run: gradle :app:assembleDebug --no-daemon
+      - name: Validate APK
+        run: |
+          cp app/build/outputs/apk/debug/app-debug.apk MindfulReaderByRK.apk
+          ls -lh MindfulReaderByRK.apk
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --min-sdk-version 24 MindfulReaderByRK.apk
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MindfulReaderByRK
+          path: MindfulReaderByRK.apk
+          if-no-files-found: error
+      - name: Publish direct APK download
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest -y --cleanup-tag -R "$GITHUB_REPOSITORY" || true
+          gh release create latest MindfulReaderByRK.apk -R "$GITHUB_REPOSITORY" \
+            -t "Mindful Reader by RK — Android APK" \
+            -n "Kindle-style reader and discipline app. Download MindfulReaderByRK.apk and install on Android. Debug-signed for personal testing; updates may require uninstalling prior builds."
