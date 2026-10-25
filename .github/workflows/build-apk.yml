@@ -20,7 +20,10 @@ jobs:
       - name: Install Android SDK platform
         run: |
           echo "SDK path: $ANDROID_HOME"
-          sdkmanager "platforms;android-35" "build-tools;35.0.0"
+          SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f | sort -V | tail -1)"
+          echo "SDK manager: $SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses > /dev/null || true
+          "$SDKMANAGER" "platforms;android-35" "build-tools;35.0.0"
       - name: Gradle 8.7
         uses: gradle/actions/setup-gradle@v4
         with:
