@@ -1,0 +1,1117 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f5f0e6"><meta name="description" content="Mindful Reader by RK: original study summaries, mantras and trading discipline tracker"><title>Mindful Reader by RK — Kindle-style Study App</title><style>:root{--bg:#f5f0e6;--page:#fffcf5;--ink:#26281e;--muted:#74766d;--hair:#e1dacd;--accent:#35675b;--accent2:#adc9b1;--glass:rgba(255,252,245,.92);--reader-size:19px;--reader-leading:1.85;--serif:Georgia,'Times New Roman',serif;color-scheme:light}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif;-webkit-tap-highlight-color:transparent}body[data-theme=light]{--bg:#f0f1ef;--page:#fff;--ink:#242b2a;--muted:#687372;--hair:#d9e0dd;--accent:#23695b;--accent2:#cbe1d4;--glass:rgba(255,255,255,.95)}body[data-theme=dark]{--bg:#131b1b;--page:#1b2523;--ink:#f1f0e4;--muted:#a2b0aa;--hair:#33443e;--accent:#94c5aa;--accent2:#2f594d;--glass:rgba(27,37,35,.96);color-scheme:dark}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.app{max-width:1050px;margin:auto;min-height:100svh;padding-bottom:86px}.top{position:sticky;top:0;z-index:10;background:var(--glass);backdrop-filter:blur(18px);border-bottom:1px solid var(--hair);height:65px;padding:0 18px;display:flex;align-items:center;gap:10px}.mark{width:35px;height:35px;border-radius:11px;display:grid;place-items:center;background:var(--accent);color:var(--page);font-family:Georgia,serif;font-weight:bold;font-size:20px;flex-shrink:0}.brand{flex:1;min-width:0}.brand b{font-family:Georgia,serif;letter-spacing:.1px;font-size:19px}.brand small{display:block;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:2px}.iconbtn{border:1px solid var(--hair);border-radius:12px;background:transparent;color:var(--ink);min-width:37px;height:37px;display:grid;place-items:center;font-size:18px}.iconbtn.active{color:var(--accent);border-color:var(--accent)}.nav{position:fixed;bottom:0;left:0;right:0;height:75px;padding:6px max(10px,env(safe-area-inset-left)) calc(9px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-right));background:var(--glass);backdrop-filter:blur(16px);border-top:1px solid var(--hair);z-index:15;display:flex;justify-content:space-around;max-width:1050px;margin:auto}.nav button{display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:0;background:none;color:var(--muted);font-size:11px;font-weight:600;max-width:160px}.nav button svg{width:22px;height:22px}.nav button.on{color:var(--accent)}.view{padding:21px 17px 28px;max-width:950px;margin:auto}.eyebrow{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent)}.h1{font:normal clamp(30px,6.5vw,43px)/1.08 Georgia,serif;letter-spacing:-1.3px;margin:10px 0 12px}.intro{line-height:1.65;color:var(--muted);font-size:14px}.hero{background:var(--page);padding:25px 22px 20px;border:1px solid var(--hair);border-radius:22px;position:relative;overflow:hidden}.hero:after{content:'“';position:absolute;font:190px Georgia,serif;right:8px;top:-57px;opacity:.065;pointer-events:none}.hero-quote{font:26px/1.34 Georgia,serif;max-width:750px;margin:15px 0 15px;letter-spacing:-.35px}.pill{display:inline-flex;align-items:center;gap:5px;border-radius:999px;background:var(--accent2);color:var(--accent);padding:6px 10px;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase}body[data-theme=dark] .pill{color:#dcf0dd}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.section-title{font:25px/1.2 Georgia,serif;letter-spacing:-.4px;margin:26px 0 14px}.small{font-size:12px;color:var(--muted);line-height:1.6}.btn{background:var(--accent);color:var(--page);padding:12px 17px;border:0;border-radius:12px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:43px}.btn.secondary{border:1px solid var(--hair);background:var(--page);color:var(--ink)}.btn.tiny{font-size:12px;padding:8px 12px;min-height:34px}.btn:disabled{opacity:.45;cursor:not-allowed}body[data-theme=dark] .btn:not(.secondary){color:#10211b}.card{background:var(--page);border:1px solid var(--hair);border-radius:19px;padding:19px}.shelf{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.bookcard{background:var(--page);border:1px solid var(--hair);border-radius:17px;overflow:hidden;padding:12px;text-align:left;color:var(--ink);min-width:0;display:flex;flex-direction:column}.bookcover{aspect-ratio:3/3.85;min-height:170px;max-height:280px;border-radius:10px;display:flex;flex-direction:column;justify-content:space-between;padding:16px 12px;background:var(--cover);color:#fff;position:relative;overflow:hidden;box-shadow:inset 8px 0 10px #0002,0 6px 14px #0001}.bookcover:before{content:'';position:absolute;width:220px;height:220px;border:1px solid #fff4;border-radius:50%;right:-100px;top:30px}.bookcover:after{content:'';position:absolute;width:115px;height:115px;border:1px solid #fff4;border-radius:50%;left:-70px;bottom:-50px}.cover-kicker{font-size:9px;letter-spacing:2px;font-weight:750;z-index:1}.cover-title{font:clamp(17px,3.3vw,28px)/1.09 Georgia,serif;letter-spacing:-.55px;z-index:1}.cover-author{font-size:10px;letter-spacing:1px;opacity:.85;z-index:1}.book-info{padding:10px 2px 2px;display:grid;gap:4px}.book-info strong{font-size:13px;line-height:1.35}.book-info span{font-size:11px;color:var(--muted)}.progress{height:5px;background:var(--hair);border-radius:30px;overflow:hidden}.progress i{display:block;height:100%;background:var(--accent);border-radius:30px}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metric{background:var(--page);border:1px solid var(--hair);border-radius:16px;padding:15px 9px;text-align:center}.metric b{font:28px Georgia,serif;display:block}.metric span{font-size:10px;color:var(--muted)}.chapter-list{display:grid;gap:8px}.chapter-row{width:100%;padding:16px 14px;text-align:left;background:var(--page);border:1px solid var(--hair);border-radius:13px;color:var(--ink);display:flex;gap:12px;align-items:center}.chapter-row span:first-child{font:20px Georgia,serif;color:var(--accent);min-width:32px}.chapter-row strong{font-size:13px;line-height:1.4}.chapter-row small{display:block;margin-top:5px;color:var(--muted);font-size:11px}.reader{max-width:760px;margin:0 auto}.reader-head{display:flex;align-items:center;gap:9px;margin:6px 0 17px}.reader-head .breadcrumb{flex:1;font-size:11px;letter-spacing:.7px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.paper{background:var(--page);border:1px solid var(--hair);border-radius:17px;padding:clamp(21px,5vw,52px);box-shadow:0 8px 35px #182e1c08}.paper .chapter-no{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);font-weight:800}.paper h1{font:normal clamp(31px,6vw,43px)/1.15 Georgia,serif;margin:18px 0 18px;letter-spacing:-.75px}.paper .drop-lead{font:italic calc(var(--reader-size) + 1px)/var(--reader-leading) var(--serif);color:var(--muted);border-bottom:1px solid var(--hair);padding-bottom:22px;margin:0 0 24px}.paper p{font:var(--reader-size)/var(--reader-leading) var(--serif);margin:0 0 21px;word-wrap:break-word}.paper h2{font:25px Georgia,serif;color:var(--accent);margin:28px 0 14px}.paper .apply{background:var(--bg);border-left:3px solid var(--accent);padding:17px 17px 1px;margin:27px 0;border-radius:0 12px 12px 0}.paper .apply b{font:800 11px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--accent)}.paper .apply p{font-size:calc(var(--reader-size) - 1px);line-height:1.68;margin:11px 0 16px}.paper .quote{font:italic 22px/1.45 Georgia,serif;text-align:center;padding:16px 12px;color:var(--accent)}.chapter-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:20px 0}.outline{width:100%;border:1px solid var(--hair);color:var(--ink);background:var(--page);border-radius:13px;padding:12px 14px;text-align:left}.chapter-drawer{display:none;margin:12px 0 20px}.chapter-drawer.show{display:grid;gap:6px}.chapter-drawer button{text-align:left;padding:11px;border:1px solid var(--hair);border-radius:8px;color:var(--ink);background:var(--page)}.chapter-drawer button.sel{border-color:var(--accent);color:var(--accent)}.control-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.tabs{display:flex;gap:7px;overflow-x:auto;padding:4px 0 12px;scrollbar-width:none}.tabs button{flex-shrink:0;border:1px solid var(--hair);background:var(--page);color:var(--ink);border-radius:100px;padding:9px 13px;font-size:12px}.tabs button.sel{background:var(--accent);color:var(--page)}.mantra{border:1px solid var(--hair);border-radius:17px;background:var(--page);padding:18px;margin:0 0 11px}.mantra .words{font:21px/1.4 Georgia,serif;margin:9px 0 14px}.input{width:100%;border:1px solid var(--hair);background:var(--page);color:var(--ink);padding:13px 14px;border-radius:12px;outline:none}.input::placeholder{color:var(--muted)}textarea.input{resize:vertical;min-height:100px;line-height:1.6}.habit{display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--hair);padding:12px 0;line-height:1.4;font-size:14px}.habit:last-child{border-bottom:0}.habit input{accent-color:var(--accent);width:19px;height:19px;flex-shrink:0}.editor-row{display:grid;gap:5px;margin:15px 0}.editor-row label{font-size:11px;letter-spacing:1px;font-weight:800;color:var(--accent);text-transform:uppercase}.notice{background:var(--bg);border:1px solid var(--hair);border-radius:12px;padding:14px;line-height:1.6;font-size:13px;color:var(--muted)}.quiz-choice{display:block;width:100%;margin:8px 0;text-align:left;padding:14px;border:1px solid var(--hair);border-radius:11px;color:var(--ink);background:var(--page);line-height:1.5}.quiz-choice.selected{border-color:var(--accent);background:var(--bg)}.quiz-choice.right{border-color:#589674}.quiz-choice.wrong{border-color:#c17969}.meter{height:7px;border-radius:30px;background:var(--hair);overflow:hidden}.meter b{display:block;height:100%;background:var(--accent);transition:width .25s}.stat-chart{display:flex;gap:8px;align-items:flex-end;height:126px;margin-top:22px}.stat-chart .bar{flex:1;min-width:0;background:var(--accent2);border-radius:6px 6px 0 0;position:relative;min-height:4px}.stat-chart .bar span{position:absolute;bottom:-22px;left:0;right:0;text-align:center;font-size:10px;color:var(--muted)}.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:92px;z-index:30;background:var(--ink);color:var(--page);font-size:13px;border-radius:12px;padding:12px 18px;box-shadow:0 10px 30px #0004;max-width:85vw;opacity:0;pointer-events:none;transition:opacity .2s}.toast.visible{opacity:1}.settings-panel{position:fixed;top:74px;right:max(10px,calc((100vw - 1050px)/2 + 14px));z-index:20;padding:20px;width:min(350px,calc(100vw - 30px));background:var(--page);border:1px solid var(--hair);border-radius:18px;box-shadow:0 15px 40px #0002}.settings-panel[hidden]{display:none}.line{border-top:1px solid var(--hair);margin:16px 0}.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(min-width:700px){.view{padding:30px 32px}.shelf{grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}.bookcover{min-height:220px}.hero{padding:33px 36px}.nav{border-radius:20px 20px 0 0}}@media(max-width:360px){.cover-title{font-size:17px}.hero-quote{font-size:22px}.top{padding:0 10px}.bookcover{padding:12px 9px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}} 
+</style></head><body data-theme="sepia"><div class="app"><header class="top"><div class="mark" aria-hidden="true">R</div><div class="brand"><b>Mindful Reader</b><small id="barTitle">YOUR DAILY READER</small></div><button class="iconbtn" id="searchButton" aria-label="Search library">⌕</button><button class="iconbtn" id="settingsButton" aria-label="Reading settings">⚙</button></header><main id="main" aria-live="polite"></main><nav class="nav" id="nav" aria-label="Main navigation"></nav><aside class="settings-panel" id="settingsPanel" hidden><div class="row"><strong style="font:24px Georgia,serif">Reading settings</strong><button class="iconbtn" id="closeSettings" aria-label="Close settings">×</button></div><div class="line"></div><div class="eyebrow">PAGE COLOR</div><div class="control-row" style="margin-top:12px"><button class="btn secondary tiny" data-theme-set="sepia">Sepia</button><button class="btn secondary tiny" data-theme-set="light">White</button><button class="btn secondary tiny" data-theme-set="dark">Dark</button></div><div class="line"></div><div class="eyebrow">TEXT SIZE</div><div class="row" style="margin-top:12px"><button class="btn secondary" id="fontLess" aria-label="Decrease font size">A−</button><span class="small" id="fontLabel">19 px</span><button class="btn secondary" id="fontMore" aria-label="Increase font size">A+</button></div><p class="small">Settings and reading progress stay on this device.</p></aside><div class="toast" id="toast" role="status" aria-live="polite"></div></div><script>window.READER_CONTENT={
+  "books": [
+    {
+      "id": "mental",
+      "title": "The Mental Game of Trading",
+      "author": "Jared Tendler",
+      "subtitle": "Identify emotional patterns. Fix root causes. Execute consistently.",
+      "tag": "TRADING PSYCHOLOGY",
+      "color": "#b18b4c",
+      "overview": "This book treats trading errors as recurring, diagnosable performance patterns rather than moral failings. Its system moves from mapping emotional escalation to finding the belief or learning error behind it, then correcting that error during real decisions. It covers greed, fear, tilt, confidence, discipline, and troubleshooting. It does not teach trading setups or prove that psychology alone produces profitability: a real trading edge and risk controls are still necessary.",
+      "chapters": [
+        {
+          "id": "mental-1",
+          "number": 1,
+          "title": "A System to Fix Mental Game Problems",
+          "key": "Trading errors often persist because the trader manages symptoms rather than their underlying cause. Emotions are information about how the trader interprets an event, not automatically an enemy to suppress. The starting system has three stages: map the pattern, identify the root, and correct it repeatedly.",
+          "deep": "Technical skill and emotional skill must be developed separately. A trader may accurately identify an entry but sabotage execution through chasing, premature exits, or changing a stop. Temporary calm is not the same as solving the thought that triggers the behavior. Improvement requires observation, a causal hypothesis, and repetition.",
+          "example": "You entered a valid setup, but a quick adverse candle provoked panic. Rather than saying “I am weak,” record what you feared would happen and how your decision changed.",
+          "practice": "Write the costliest rule violation from your last ten trades. Record its first warning sign, the thought underneath it, and one new response.",
+          "mantra": "Find the pattern, not a person to blame."
+        },
+        {
+          "id": "mental-2",
+          "number": 2,
+          "title": "Map Your Pattern",
+          "key": "Recognize the earliest signs of an emotional episode before decisions degrade. A useful map includes triggers, thoughts, bodily sensations, impulses, actions, and consequences. Describe the pattern at low, medium, and high intensity so the first warning sign becomes actionable.",
+          "deep": "Emotional escalation often feels sudden only because its early stages were missed. Notice accelerated breathing, fixation on recovering, repeatedly checking P&L, and the urge to click. The aim is not to be emotionless; it is to see the sequence early enough to choose your planned behavior.",
+          "example": "A loss produces mild irritation, then thoughts of recovering quickly, then larger position sizes. Your intervention belongs at the first “I must recover now” thought, not after the oversized order.",
+          "practice": "Create a three-level map: 2/10, 5/10 and 8/10 emotion. Write the visible behavior at each level.",
+          "mantra": "Early recognition is my edge over impulse."
+        },
+        {
+          "id": "mental-3",
+          "number": 3,
+          "title": "Find the Root of Your Problem",
+          "key": "A surface habit can come from a mistaken belief: “I must win today,” “every valid setup must profit,” or “one loss proves I am incapable.” Investigating these assumptions is more lasting than merely promising to stop. The Inchworm Concept describes uneven development: strengths improve while weaker habits still lag.",
+          "deep": "Separate an ordinary loss within your system from a process error. When results are uncertain, a good decision can lose money and a bad decision can make money. Progress becomes steadier when you improve your weakest repeatable behaviors rather than measuring yourself only by your best days.",
+          "example": "Two losing trades tempt you to double size because you interpret losses as unacceptable. The root may be the demand to finish every session green.",
+          "practice": "Ask “What did this result mean about me?” and then “Is that meaning a fact or an assumption?”",
+          "mantra": "Correct the belief underneath the click."
+        },
+        {
+          "id": "mental-4",
+          "number": 4,
+          "title": "Greed",
+          "key": "Greed appears as pressure for more: extra trades, oversized positions, unrealistic targets, or refusing to accept adequate gains. Tendler treats it as a pattern with identifiable beliefs and triggers, not simply a universal desire for profit.",
+          "deep": "Distinguish ambition from compulsive maximization. A disciplined trader can have large goals while honoring limits. The dangerous moment is when a profit becomes evidence you deserve more, or a good opportunity feels inadequate unless it produces an outsized result.",
+          "example": "After a planned 1R gain, you abandon the daily stop and force a low-quality second trade because the market “owes” you a bigger day.",
+          "practice": "Write your maximum size, trade count, and daily loss boundary before the market opens. No exceptions after a win.",
+          "mantra": "Enough is a rule, not a feeling."
+        },
+        {
+          "id": "mental-5",
+          "number": 5,
+          "title": "Fear",
+          "key": "Fear can produce FOMO, avoiding legitimate losses, hesitating on good entries, fear of mistakes, and fear of failure. It often reflects a belief that uncertainty or a negative result is personally dangerous. The solution is to recognize the precise fear and test the assumption behind it.",
+          "deep": "FOMO and hesitation look opposite but both let anticipated discomfort make decisions. Prepare entry criteria, planned risk and acceptable outcomes before price moves. An appropriate loss is part of the distribution of a tested system; it is not proof of personal inadequacy.",
+          "example": "You skip a valid setup after yesterday’s loss, then chase it at a worse price. Fear first blocks the planned trade and then causes an impulsive one.",
+          "practice": "For the next demo session, record every valid setup you did or did not take and why. Grade rule compliance, not outcome.",
+          "mantra": "Uncertainty is permitted. Rule breaking is optional."
+        },
+        {
+          "id": "mental-6",
+          "number": 6,
+          "title": "Tilt",
+          "key": "Tilt is an emotionally driven loss of decision quality. Anger may arise from hating to lose, mistakes, perceived injustice, revenge, or entitlement. Identify the type instead of treating every angry trade as the same problem.",
+          "deep": "When market movement feels personally unfair, the trader can shift from executing an edge to demanding emotional repayment. A market is not a moral referee. A cooling period protects the trading account while the underlying belief is examined.",
+          "example": "After a stop-loss is hit by one tick, you immediately buy again without a setup to prove the previous exit was wrong.",
+          "practice": "Create a 10-minute no-order rule after an anger spike. If your stop condition has been reached, close the session entirely.",
+          "mantra": "The market owes me nothing."
+        },
+        {
+          "id": "mental-7",
+          "number": 7,
+          "title": "Confidence",
+          "key": "Confidence becomes unstable when it depends entirely on recent wins or losses. Tendler contrasts overconfidence, lack of confidence, and a more stable assessment of skill. Perfectionism, hope, cognitive distortions and desperation can destabilize execution.",
+          "deep": "Stable confidence is supported by specific evidence: what you know, what you do well, where you still need practice, and what the market can still do against you. Avoid statements like “I am unbeatable” or “I am hopeless.” Both ignore probabilities.",
+          "example": "A three-trade winning streak makes you skip risk checks. A three-trade losing streak makes you abandon a validated strategy. Both are the same dependence on recent results.",
+          "practice": "Write three verified strengths, two weaknesses, and one skill-building task. Review weekly.",
+          "mantra": "My self-worth does not fluctuate with the candle."
+        },
+        {
+          "id": "mental-8",
+          "number": 8,
+          "title": "Discipline",
+          "key": "Discipline failures may be driven by impatience, boredom, distraction, procrastination, laziness as a descriptive pattern, or excessive attention to outcomes. Map precisely when the planned behavior becomes difficult and why.",
+          "deep": "Trying to become disciplined by force of will alone is fragile. Reduce opportunities for impulsive orders; specify when trading is permitted; design routines that make compliance easier; keep the bar achievable. Diagnose whether you actually know your rules and have a tested edge before blaming yourself.",
+          "example": "After waiting 45 minutes with no setup, you enter a random trade because inactivity feels unproductive.",
+          "practice": "Set a trading window and a maximum number of orders. Make “no trade” a valid successful session outcome.",
+          "mantra": "Waiting is execution, too."
+        },
+        {
+          "id": "mental-9",
+          "number": 9,
+          "title": "Correct Your Problem",
+          "key": "A real-time correction combines awareness with an accurate replacement for the thought behind an error. Use a preparation routine, clear response statements, and deliberate rehearsal while emotional intensity is still manageable.",
+          "deep": "Self-coaching works best when specific and believable. “This loss is within my plan; the next setup must stand alone” is more useful than “I will definitely win.” Post-session reflection lets you refine what works. During severe emotional escalation, stop trading rather than trying to reason through it mid-order.",
+          "example": "You notice “I need to win it back.” You identify the thought, read your risk rule, and step away before clicking.",
+          "practice": "Build one if–then rule: “If I feel urgent recovery pressure, then I lock orders and walk away for ten minutes.”",
+          "mantra": "Notice. Correct. Rehearse."
+        },
+        {
+          "id": "mental-10",
+          "number": 10,
+          "title": "Troubleshooting a Lack of Progress",
+          "key": "Change may be slow because early warning signs remain invisible, stress accumulates, burnout reduces capacity, or problems outside the market spill into trading. One bad session does not prove the process has failed.",
+          "deep": "Review both visible behavior and the environment: sleep, workload, personal stress, complexity and fatigue. Decide whether to simplify the plan or reduce risk while practicing. Repeat the diagnosis when the same problem returns; do not keep adding tools without checking what changed.",
+          "example": "You follow rules for a week but violate them after a poor night’s sleep. The missing input may be your readiness threshold rather than lack of determination.",
+          "practice": "Add a 1–5 readiness score before trading. At low scores, use replay or take the day off.",
+          "mantra": "Progress is measured in patterns, not perfection."
+        }
+      ]
+    },
+    {
+      "id": "confidence",
+      "title": "The Confidence Gap",
+      "author": "Russ Harris",
+      "subtitle": "Act on what matters even when fear and self-doubt are present.",
+      "tag": "SELF-CONFIDENCE",
+      "color": "#5f806f",
+      "overview": "Russ Harris applies Acceptance and Commitment Therapy (ACT) principles to confidence. Rather than waiting for all fear to disappear or forcing positive affirmations, learn to unhook from thoughts, make space for feelings, pay attention, identify values and take meaningful action. Confidence grows through practice and a more flexible relationship with uncomfortable internal experiences.",
+      "chapters": [
+        {
+          "id": "confidence-1",
+          "number": 1,
+          "title": "Why Bother?",
+          "key": "Confidence is not a final life destination. Ask what you actually want confidence for: learning, connection, professional progress, or better choices. A clear purpose prevents confidence work from becoming endless self-monitoring.",
+          "deep": "A trader may think “I want to feel confident” when the concrete goal is “I want to execute my tested plan calmly.” One is a feeling; the other is an observable skill. ACT emphasizes behavior guided by values rather than by a mood requirement.",
+          "example": "You can practice waiting for a valid setup today even if you still feel nervous.",
+          "practice": "Write one meaningful activity you are avoiding. State its purpose and the smallest step you can take now.",
+          "mantra": "I can begin before I feel ready."
+        },
+        {
+          "id": "confidence-2",
+          "number": 2,
+          "title": "The Good Old Days",
+          "key": "Our brains evolved to detect threats, compare, predict and warn us. A mind that produces anxious warnings is doing a familiar survival job, but modern challenges are not always physical emergencies.",
+          "deep": "This perspective helps you stop interpreting the existence of anxiety as evidence of personal weakness. Recognize that predictions, memories and self-criticism are mental events. They may be useful, inaccurate, or irrelevant; each still needs evaluation in context.",
+          "example": "“A loss could happen” is a normal prediction, not a command to panic.",
+          "practice": "When a frightening thought appears, label it as your threat-detection system working. Then check your written plan.",
+          "mantra": "A warning thought is not an order."
+        },
+        {
+          "id": "confidence-3",
+          "number": 3,
+          "title": "True or False?",
+          "key": "Popular stories about success, confidence and positive thinking often confuse simple slogans with evidence. Question claims that self-esteem and fearlessness are prerequisites for action.",
+          "deep": "Instead of arguing about whether you are an inherently confident person, ask what practical behavior you can learn. Skills can improve while thoughts remain skeptical. Avoid demanding permanent positivity as a condition of progress.",
+          "example": "Repeating “I will definitely profit” does not change market probabilities or enforce a stop-loss.",
+          "practice": "Replace one sweeping belief about your personality with one testable skill goal.",
+          "mantra": "Practice is more reliable than a slogan."
+        },
+        {
+          "id": "confidence-4",
+          "number": 4,
+          "title": "It Ain’t Necessarily So",
+          "key": "The mind presents judgments and stories as if they were facts. Learning to notice thinking creates distance between an internal statement and what you choose to do.",
+          "deep": "A thought such as “I always ruin everything” often compresses many different events into an absolute conclusion. Rather than proving the thought wrong on the spot, identify that it is a thought and return attention to what is happening.",
+          "example": "After one impulsive entry you think “I will never change.” You recognize this as a familiar story and review the specific trigger.",
+          "practice": "Add “I am having the thought that…” before a recurring self-criticism. Observe whether it feels less commanding.",
+          "mantra": "A thought can be loud and still be just a thought."
+        },
+        {
+          "id": "confidence-5",
+          "number": 5,
+          "title": "Off the Hook",
+          "key": "Cognitive fusion happens when thoughts hook your attention and control behavior. Defusion skills let you notice thoughts without obeying them. The aim is not to erase unwanted mental content.",
+          "deep": "A defusion technique is successful when it gives you freedom to act according to values, not necessarily when anxiety drops. Observe language, name the story and gently return to the activity.",
+          "example": "“I must enter now” appears as a command. You call it the urgency story and wait for your checklist.",
+          "practice": "Practice naming your three common thought hooks: urgency, inadequacy and recovery.",
+          "mantra": "I can unhook before I click."
+        },
+        {
+          "id": "confidence-6",
+          "number": 6,
+          "title": "Never Short of Words",
+          "key": "The mind can generate endless commentary, predictions and explanations. Trying to win a debate with every thought can trap you in more thinking.",
+          "deep": "Give words their proper scale. Repetitive mental commentary need not become an endless argument. Use a brief awareness phrase and redirect attention to a sensory or practical task.",
+          "example": "You spend ten minutes arguing internally about yesterday’s loss instead of completing your planned review.",
+          "practice": "Set a two-minute review note for each error; then move to one corrective action.",
+          "mantra": "I do not need to answer every thought."
+        },
+        {
+          "id": "confidence-7",
+          "number": 7,
+          "title": "The Self-Esteem Trap",
+          "key": "Constantly assessing whether you are good, bad, smart or worthless can increase dependence on emotional evaluations. Harris proposes stepping away from rating your entire identity.",
+          "deep": "Distinguish the person from the behavior. You can acknowledge a mistake without transforming it into a global character verdict. Both inflated praise and harsh self-judgment may distract from what needs to be learned.",
+          "example": "“I broke my rule” tells you where to improve; “I am a failure” offers no actionable instruction.",
+          "practice": "Rewrite three labels about yourself as descriptions of changeable behavior.",
+          "mantra": "I evaluate the action, not my entire identity."
+        },
+        {
+          "id": "confidence-8",
+          "number": 8,
+          "title": "The Rules of Engagement",
+          "key": "Full engagement means attending to the present task instead of being absorbed in predictions and self-commentary. The skill includes focused awareness and flexible redirection.",
+          "deep": "Mindfulness here is practical engagement, not a requirement to be relaxed. Notice sounds, posture, breathing and the chart without converting every sensation into a verdict. Return attention to your chosen task.",
+          "example": "You notice your heartbeat and the market candle simultaneously; you still follow the predefined entry rule.",
+          "practice": "Before a session, take 60 seconds to notice physical sensations, then read your plan once.",
+          "mantra": "Be present with the process."
+        },
+        {
+          "id": "confidence-9",
+          "number": 9,
+          "title": "Smell the Roses",
+          "key": "Attention can become so consumed by worry that we miss meaningful aspects of the current moment. Reconnecting to experience enriches life and improves engagement.",
+          "deep": "Do not make progress contingent on the outcome of one performance. Learn to notice what is happening beyond mental commentary, including ordinary moments, relationships and small signs of improvement.",
+          "example": "You finish a losing session but can still appreciate that you obeyed your risk limit and had a good evening.",
+          "practice": "List three things you observed today that were not your trading P&L.",
+          "mantra": "There is life beyond the result."
+        },
+        {
+          "id": "confidence-10",
+          "number": 10,
+          "title": "Psychological Smog",
+          "key": "When attention is crowded by rumination and mental stories, experience becomes harder to see clearly. The response is to notice the mental fog and return to what matters in the present.",
+          "deep": "Try describing what is actually happening separately from your interpretation. “Price moved against my position” is an observation; “the market is punishing me” is a story. Separating them is especially helpful in heated moments.",
+          "example": "After a sharp candle, read the actual stop level and size instead of narrating a disaster.",
+          "practice": "Draw two columns: observable facts and the stories your mind adds.",
+          "mantra": "Clear observation precedes clear action."
+        },
+        {
+          "id": "confidence-11",
+          "number": 11,
+          "title": "Fuelling Up",
+          "key": "Values describe how you want to behave, such as persistence, curiosity, honesty and care. Goals name outcomes; values help orient conduct every day, even when a goal is delayed.",
+          "deep": "A result can be blocked by factors outside your control, but values can still be practiced. Trading values might include patience, accuracy, protection of capital, learning and respect for uncertainty.",
+          "example": "You cannot make the market offer a setup; you can be the kind of trader who does not force one.",
+          "practice": "Choose three values and define what each looks like as a visible action today.",
+          "mantra": "I choose my values before my results."
+        },
+        {
+          "id": "confidence-12",
+          "number": 12,
+          "title": "The Success Trap",
+          "key": "Defining success only by external outcomes can make daily life feel like a pass/fail exam. Values-focused success recognizes meaningful behavior along the way.",
+          "deep": "This is not an excuse to ignore results. Goals and performance matter, but a short-term outcome should not be your sole identity measure. A disciplined losing trade can show better execution than an impulsive winning trade.",
+          "example": "Your trading day loses money within planned limits while all entry rules are followed. That can be process success and financial loss at the same time.",
+          "practice": "At day end, grade rule adherence separately from net P&L.",
+          "mantra": "A good process is meaningful even on a losing day."
+        },
+        {
+          "id": "confidence-13",
+          "number": 13,
+          "title": "Magic Glue",
+          "key": "Commitment to values provides continuity when motivation, confidence and circumstances change. Values connect difficult actions to a larger purpose.",
+          "deep": "Identify why the effort matters to you rather than trying to manufacture excitement at every moment. Keep commitments small enough to be practiced daily. A personal why becomes useful only when attached to repeatable behavior.",
+          "example": "You review losing trades because becoming careful and resilient matters more than avoiding discomfort.",
+          "practice": "Complete “I want to trade with discipline because…” and link it to one action.",
+          "mantra": "My why outlasts my mood."
+        },
+        {
+          "id": "confidence-14",
+          "number": 14,
+          "title": "The Fear Trap",
+          "key": "Attempts to avoid anxiety at all costs can shrink life. Courage is acting effectively in the presence of fear, with sensible preparation and boundaries.",
+          "deep": "Avoidance can bring temporary relief but prevent learning. Gradual, appropriate exposure to difficult situations builds flexible behavior. In trading, never use psychological exposure as a reason to risk money beyond limits; practice in demo first.",
+          "example": "You fear pressing the button on a valid signal, so you rehearse the full routine with simulated orders before using real capital.",
+          "practice": "Pick one safe, small uncomfortable task you have been avoiding and do it deliberately.",
+          "mantra": "Fear may accompany action; it need not direct it."
+        },
+        {
+          "id": "confidence-15",
+          "number": 15,
+          "title": "Plenty of Space",
+          "key": "Acceptance means allowing feelings and bodily sensations to exist without unnecessary struggle. It is not resignation to harmful circumstances or agreement with every thought.",
+          "deep": "Make space for discomfort while still protecting what matters. Notice where an emotion sits in the body, soften the struggle against it and return to effective behavior. Acceptance concerns the internal experience; it does not cancel external safety rules.",
+          "example": "You feel disappointment after a stop-loss but do not open a revenge order to make the feeling disappear.",
+          "practice": "For 90 seconds, name a feeling, locate it physically and permit it while breathing naturally.",
+          "mantra": "A feeling can be present without taking control."
+        },
+        {
+          "id": "confidence-16",
+          "number": 16,
+          "title": "Riding a Wild Stallion",
+          "key": "Strong emotion is dynamic, sometimes intense and difficult to direct. Fighting to eliminate it can worsen the struggle. Learn to hold steady in the presence of changing sensations.",
+          "deep": "Observe the rise and fall of bodily activation. Focus on staying grounded rather than controlling each wave. If arousal is too high to think clearly, a trading timeout is a useful boundary, not a failure of acceptance.",
+          "example": "Your anger rises after slippage; you notice shaking hands and end the session instead of trading at peak intensity.",
+          "practice": "Map where fear or anger lives in your body and set a stop-trading threshold.",
+          "mantra": "I can ride the feeling without following it."
+        },
+        {
+          "id": "confidence-17",
+          "number": 17,
+          "title": "Throw Off the Bowlines",
+          "key": "Committed action means taking real steps aligned with values rather than waiting for the perfect emotional state. The steps should be clear and manageable.",
+          "deep": "Courage becomes measurable when you show up, practice and adjust. Plans work better when tied to time and context. Persistent action is not stubbornness: feedback can tell you when to refine the method.",
+          "example": "You sit down for a planned 20-minute replay session despite self-doubt.",
+          "practice": "Schedule one small values-led action for tomorrow with a precise start time.",
+          "mantra": "I act on purpose, not permission from my mood."
+        },
+        {
+          "id": "confidence-18",
+          "number": 18,
+          "title": "What’s Stopping You?",
+          "key": "Obstacles may be external circumstances or internal barriers such as thoughts, feelings, memories and urges. Different barriers require different solutions.",
+          "deep": "An external obstacle may need resources or a revised plan; internal barriers may need defusion, acceptance and commitment. Label the type before applying a remedy. Be practical: unknown setups require education, not confidence slogans.",
+          "example": "If data is unavailable you need a technical fix; if the data is visible but you fear loss you may need mental skills.",
+          "practice": "List your top three obstacles and mark each external, skill-based or internal.",
+          "mantra": "Name the barrier to choose the right tool."
+        },
+        {
+          "id": "confidence-19",
+          "number": 19,
+          "title": "The Motivation Trap",
+          "key": "Waiting until you feel motivated can delay valued behavior indefinitely. Action often begins before a satisfying mood arrives.",
+          "deep": "Motivation fluctuates. Build modest, repeatable steps that do not depend on enthusiasm. Reflect on whether your habits serve long-term values or merely reduce discomfort in the short term.",
+          "example": "You are bored with journaling, but you still record the one decision you regret because the routine matters.",
+          "practice": "Use a two-minute minimum: open the journal and record one observation even on low-energy days.",
+          "mantra": "Action can lead; motivation can follow."
+        },
+        {
+          "id": "confidence-20",
+          "number": 20,
+          "title": "The Power of Self-Acceptance",
+          "key": "Self-acceptance means treating yourself as a person capable of learning without needing constant praise or condemnation. It supports accountability without humiliation.",
+          "deep": "You can say “That was a costly mistake, and I will change the process” without either denying the mistake or attacking your worth. Compassion is not indulgence: it makes it easier to re-engage with feedback instead of hiding from it.",
+          "example": "After an impulsive trade, you log the breach, stop trading and make a corrective plan rather than punishing yourself with another trade.",
+          "practice": "Write a factual incident report to yourself with no insults and one repair action.",
+          "mantra": "Accountability does not require self-hatred."
+        },
+        {
+          "id": "confidence-21",
+          "number": 21,
+          "title": "Getting Better",
+          "key": "Confidence-building is practice, feedback and skill improvement rather than a single realization. Growth includes errors and refinement.",
+          "deep": "Deliberate practice means selecting an ability, repeating it under manageable conditions, and reviewing the results. Reduce task complexity while learning. As skills become automatic, move toward more difficult conditions without abandoning limits.",
+          "example": "You rehearse waiting for 5-minute candle completion for 20 sessions and score rule adherence each day.",
+          "practice": "Choose one execution skill for the next ten practice sessions.",
+          "mantra": "Small repeats build durable skill."
+        },
+        {
+          "id": "confidence-22",
+          "number": 22,
+          "title": "Reach the Peak",
+          "key": "Major goals provide direction, but fixation on the summit can obscure the value of the journey. Combine meaningful aspirations with mindful participation in each step.",
+          "deep": "Distinguish process measures you can control from outcomes you influence imperfectly. Celebrate realistic progress, recalibrate goals when new evidence appears, and keep living by your values during uncertainty.",
+          "example": "You target consistent profitability over time but today focus on clean setups, controlled risk and no revenge trades.",
+          "practice": "Write one long-term goal and three process behaviors that support it.",
+          "mantra": "Climb with care; do not live only for the summit."
+        },
+        {
+          "id": "confidence-23",
+          "number": 23,
+          "title": "It Ain’t Over Till It’s Over",
+          "key": "Progress is ongoing. Setbacks, fear and doubt may reappear; the goal is flexibility and recommitment, not a permanently perfect mind.",
+          "deep": "Sustaining improvement requires continued attention to values, self-acceptance, practice and feedback. When an old habit returns, notice it, repair the consequences, and resume with a smaller next step rather than declaring all progress lost.",
+          "example": "After two weeks of discipline, you break a rule once. You stop, learn and restart instead of spiraling.",
+          "practice": "Build a one-page recovery plan: warning sign, pause, response, review and next-day reset.",
+          "mantra": "A setback is a moment, not my identity."
+        }
+      ]
+    },
+    {
+      "id": "gut",
+      "title": "The Mind–Gut Connection",
+      "author": "Emeran Mayer, MD",
+      "subtitle": "How brain, gut, microbes, stress and food interact.",
+      "tag": "MIND & NUTRITION",
+      "color": "#70899c",
+      "overview": "This book explores two-way communication between brain and digestive system, the role of microbes, emotion and memory, and the effects of dietary patterns. It distinguishes promising hypotheses from established evidence: associations between microbiome characteristics and mood do not automatically prove causation. The practical message favors varied plant foods, appropriate dietary patterns and attention to stress and gut comfort, rather than a miracle probiotic.",
+      "chapters": [
+        {
+          "id": "gut-1",
+          "number": 1,
+          "title": "The Mind–Body Connection Is Real",
+          "key": "The digestive system and the brain influence each other continuously through nerves, hormones and immune-related signaling. Gut symptoms can affect emotion, and emotional states can affect digestion.",
+          "deep": "This does not mean stomach symptoms are imaginary or that every mood problem comes from food. It means psychological state and physical function can be considered together. Sleep, illness and lifestyle also contribute.",
+          "example": "Before a stressful market day, you notice stomach discomfort. Both body and situation deserve attention.",
+          "practice": "For a week, note stress, digestion, sleep and meal timing without assuming one caused the other.",
+          "mantra": "Support the whole system, not one organ."
+        },
+        {
+          "id": "gut-2",
+          "number": 2,
+          "title": "How the Mind Communicates with the Gut",
+          "key": "The brain changes gut function through autonomic and stress-response pathways. Signals can affect motility, secretion, sensitivity and the way digestive sensations are experienced.",
+          "deep": "Stress may alter hunger, bowel habits or abdominal comfort in some people. Understanding these routes helps you see why calming routines and medical evaluation can both have roles. It is not a reason to dismiss persistent symptoms.",
+          "example": "Tension during a high-stakes session coincides with digestive discomfort.",
+          "practice": "Try an unhurried pre-session meal and short relaxation routine; seek medical advice for persistent symptoms.",
+          "mantra": "The nervous system and digestion interact."
+        },
+        {
+          "id": "gut-3",
+          "number": 3,
+          "title": "How Your Gut Talks to Your Brain",
+          "key": "The gut sends information to the brain through nerve signaling, immune pathways and chemical messengers. These signals help regulate appetite, bodily sensations and emotional experience.",
+          "deep": "Gut–brain signaling is complex and not a simple happiness switch. Understanding a mechanism is different from proving that one supplement will change your thinking. Context and individual differences matter.",
+          "example": "A very heavy meal leaves you uncomfortable and makes concentrating more difficult.",
+          "practice": "Observe which ordinary meals leave you comfortably nourished during work.",
+          "mantra": "Notice the body without inventing certainty."
+        },
+        {
+          "id": "gut-4",
+          "number": 4,
+          "title": "Microbe-Speak",
+          "key": "Microorganisms and their metabolites are part of the dialogue between gut and host. Diet, environment and physiology shape the microbiome, while the microbiome can affect biological signaling.",
+          "deep": "Research is evolving. Many human studies show associations but do not establish whether microbial changes caused a health condition. Avoid promises that a particular fermented food or probiotic will cure anxiety or depression.",
+          "example": "You hear a claim that one capsule guarantees better concentration. The book encourages skepticism.",
+          "practice": "Prioritize varied food and evaluate supplement claims with evidence and professional advice.",
+          "mantra": "Curiosity with caution."
+        },
+        {
+          "id": "gut-5",
+          "number": 5,
+          "title": "Early Experiences and Gut–Brain Memory",
+          "key": "Early-life experiences and stress can shape bodily stress responses and sensitivity over time. The book discusses how memories and learning may influence gut–brain patterns.",
+          "deep": "These ideas describe possible influences, not a fixed destiny. Neither a difficult upbringing nor a stressful period means recovery is impossible. Avoid treating these associations as a diagnosis.",
+          "example": "Work stress makes a familiar digestive symptom more noticeable.",
+          "practice": "Track patterns compassionately and consider appropriate professional support when symptoms persist.",
+          "mantra": "Patterns can be understood and changed."
+        },
+        {
+          "id": "gut-6",
+          "number": 6,
+          "title": "A New Understanding of Emotions",
+          "key": "Emotion arises from interaction among the brain, body and perception rather than being isolated in the head. Bodily sensations participate in how emotional experiences are constructed.",
+          "deep": "Physical cues can be useful, but they are not flawless instructions. Heart rate, gut discomfort and arousal require interpretation alongside context. Focus on observation rather than labeling every sensation as danger.",
+          "example": "A knot in your stomach before trading could reflect arousal, not proof that the setup is wrong.",
+          "practice": "Name sensation, context and chosen action separately in a short daily note.",
+          "mantra": "A sensation is information, not a verdict."
+        },
+        {
+          "id": "gut-7",
+          "number": 7,
+          "title": "Intuitive Decision Making",
+          "key": "Past experience and bodily signaling can contribute to intuition. However, quick judgments can be helpful or biased depending on learning history and environment.",
+          "deep": "A trader’s gut feeling is not proof of an edge. Test hypotheses and use a defined process. Intuition may prompt a review, but risk decisions need evidence and boundaries.",
+          "example": "You feel that an option contract “must reverse” after a large move. Treat it as a hypothesis, not an entry signal.",
+          "practice": "Write the objective criteria that would confirm or reject an intuition.",
+          "mantra": "Test instincts against rules."
+        },
+        {
+          "id": "gut-8",
+          "number": 8,
+          "title": "Food and Lessons from Traditional Diets",
+          "key": "Traditional and minimally processed eating patterns typically feature diverse plants, grains and sources of fiber. These foods supply nutrients and substrates for gut microorganisms.",
+          "deep": "The book uses evolutionary comparisons to examine diet, but no ancestral pattern is automatically ideal for every person. Variety, tolerability and nutritional adequacy matter more than novelty or fashionable labels.",
+          "example": "An Indian lunch with dal, vegetables and whole grains provides food diversity without exotic products.",
+          "practice": "Add one additional vegetable, pulse or fruit variety to weekly meals.",
+          "mantra": "Variety is a practical advantage."
+        },
+        {
+          "id": "gut-9",
+          "number": 9,
+          "title": "The Modern Processed Diet",
+          "key": "Diets high in refined sugars and heavily processed foods may displace fiber-rich foods and contribute to less favorable health patterns. Food choices affect more than just calorie counts.",
+          "deep": "The relationship is multifactorial. Rather than labelling single ingredients as toxins, examine long-term dietary patterns, total intake and lifestyle. Food guilt can be counterproductive; sustainable substitution is more useful.",
+          "example": "Replace a frequent ultra-processed snack with fruit, roasted chana and water.",
+          "practice": "Choose one repeatable swap this week instead of attempting an extreme restriction.",
+          "mantra": "Patterns matter more than perfect meals."
+        },
+        {
+          "id": "gut-10",
+          "number": 10,
+          "title": "A Road Toward Gut–Brain Well-Being",
+          "key": "The book favors plant diversity, whole grains, legumes, some fermented foods and an overall sustainable eating pattern. It suggests paying attention to how you eat, not merely what you eat.",
+          "deep": "Nutrition supports general health but cannot guarantee concentration, treat psychiatric illness or eliminate trading impulses. Keep claims proportionate to evidence. Seek individualized advice for intolerances, illness or nutritional deficiencies.",
+          "example": "A simple balanced meal and consistent sleep may help you feel better prepared without pretending to guarantee profitable decisions.",
+          "practice": "Build a weekly variety checklist: pulses, vegetables, fruits, whole grains and tolerated fermented foods.",
+          "mantra": "Fuel consistency, not miracles."
+        }
+      ]
+    },
+    {
+      "id": "vegetarian",
+      "title": "The Everyday Healthy Vegetarian",
+      "author": "Nandita Iyer",
+      "subtitle": "Practical healthy cooking with familiar Indian ingredients.",
+      "tag": "INDIAN FOOD",
+      "color": "#b07960",
+      "overview": "A practical Indian vegetarian cooking approach organized around colorful produce, useful carbohydrates, protein-rich ingredients and healthy fats. The book also discusses stocking a kitchen, menu planning, equipment and cooking routines. This study guide summarizes the nutritional ideas and examples, but does not reproduce its proprietary recipes, exact ingredient lists or photographs.",
+      "chapters": [
+        {
+          "id": "vegetarian-1",
+          "number": 1,
+          "title": "The Philosophy of Everyday Healthy Cooking",
+          "key": "Healthy Indian meals can use ordinary local ingredients, practical techniques and sensible preparation time. Nutritious food need not be expensive, elaborate or flavorless.",
+          "deep": "Build a repeatable cooking system rather than chasing special “superfoods.” Consider what foods you already like, what can be made on workdays and where nutrition gaps appear. A consistent simple meal is more valuable than an ideal menu you never cook.",
+          "example": "Dal, roti, sabzi and curd can be a stronger everyday habit than an elaborate dish that requires an hour.",
+          "practice": "List five familiar healthy meals you can prepare reliably.",
+          "mantra": "Simple and repeatable wins."
+        },
+        {
+          "id": "vegetarian-2",
+          "number": 2,
+          "title": "Plan the Kitchen and the Week",
+          "key": "A usable pantry and basic meal plan reduce friction. Keep pulses, grains, nuts, seeds, spices and vegetables available so healthy decisions are easy when you are busy.",
+          "deep": "Menu planning does not require a rigid chart. Combine staples with variation in protein and vegetables. Prepare a few components ahead when appropriate and store food safely.",
+          "example": "Cook chickpeas once and use them later in a bowl, salad or simple masala.",
+          "practice": "Pick three dinners and shop for them before the workweek starts.",
+          "mantra": "Prepare the environment; reduce the decisions."
+        },
+        {
+          "id": "vegetarian-3",
+          "number": 3,
+          "title": "Eat the Rainbow",
+          "key": "Colorful fruits and vegetables supply varied nutrients and plant compounds. Variety encourages different textures, flavors and fiber sources.",
+          "deep": "Different colors are a practical reminder of diversity, not a magical score. Aim to include seasonal, affordable produce. Cooked vegetables count too, especially when raw foods are difficult to digest.",
+          "example": "Add carrots, tomato and green leaves to an otherwise plain meal.",
+          "practice": "Include at least two vegetable colors at lunch and dinner when feasible.",
+          "mantra": "More variety, less food anxiety."
+        },
+        {
+          "id": "vegetarian-4",
+          "number": 4,
+          "title": "Good Carbs",
+          "key": "Carbohydrates support energy needs; quality, portion, preparation and the whole meal matter. The book explores ingredients such as millets, oats, barley, rice and starchy vegetables.",
+          "deep": "Carbohydrates should not automatically be called bad. Combine grains with protein-rich foods and vegetables for a more balanced plate. Dietary choices must also consider diabetes or other individual clinical needs.",
+          "example": "Millet or rice alongside rajma and vegetable sabzi makes a practical mixed meal.",
+          "practice": "Choose one whole grain or minimally processed staple you enjoy and pair it with dal or beans.",
+          "mantra": "Build a balanced plate, not a food blacklist."
+        },
+        {
+          "id": "vegetarian-5",
+          "number": 5,
+          "title": "Protein Punch",
+          "key": "Pulses, beans, paneer, yogurt, tofu, soya products, sprouts and, for ovo-vegetarians, eggs can help meet protein needs. The book demonstrates the diversity of vegetarian protein sources.",
+          "deep": "Protein needs vary by weight, age, activity and medical situation. Instead of guessing that all vegetarian meals are protein-rich, identify a meaningful protein source at each main meal. Some plant proteins are paired for overall dietary variety rather than because every plate must be mathematically complete.",
+          "example": "Moong chilla with paneer or tofu is a practical protein-oriented breakfast.",
+          "practice": "For three days, write the main protein source for breakfast, lunch and dinner.",
+          "mantra": "Put protein on the plate deliberately."
+        },
+        {
+          "id": "vegetarian-6",
+          "number": 6,
+          "title": "Healthy Fats",
+          "key": "Nuts, seeds and appropriate oils add flavor, provide essential fatty acids and help absorb fat-soluble vitamins. They are part of nutritious eating, not a free pass for unlimited portions.",
+          "deep": "Dietary fat quality and overall balance matter. Rotate options according to access and tolerance. Avoid treating any oil, seed or avocado as a guaranteed cognitive enhancer.",
+          "example": "Use a moderate quantity of peanuts or sesame in a vegetable dish and walnuts as an occasional snack.",
+          "practice": "Add a small serving of nuts or seeds to your weekly routine if appropriate.",
+          "mantra": "Quality and quantity both matter."
+        },
+        {
+          "id": "vegetarian-7",
+          "number": 7,
+          "title": "Build a Balanced Indian Plate",
+          "key": "A practical meal combines vegetables, a suitable grain or starchy base, a protein-rich food and an appropriate amount of fat. The book’s recipes can be mixed across sections rather than eaten in isolation.",
+          "deep": "The exact portions depend on appetite, activity and health needs. A protein ingredient may still be primarily carbohydrate by weight, so keep overall dietary goals in mind. Nutrition consistency is more important than perfection at a single meal.",
+          "example": "Brown rice with spinach and chickpeas, plus curd if desired, makes a varied meal.",
+          "practice": "Plan tomorrow’s lunch by choosing one item from each group.",
+          "mantra": "Balance beats extremes."
+        },
+        {
+          "id": "vegetarian-8",
+          "number": 8,
+          "title": "Sustainable Weekly Habits",
+          "key": "Meal planning, portion awareness and adaptable substitutions make healthy cooking feasible. Rotate familiar dishes, use seasonal produce and learn simple flavor techniques.",
+          "deep": "Do not copy a sample menu blindly if your preferences, allergies, budget or nutritional requirements differ. For a high-protein diet, consult a registered dietitian if you have complex health needs or want a precise target.",
+          "example": "Alternate paneer bhurji, rajma, chana, tofu and dal-based meals across a week.",
+          "practice": "Draft a five-day menu with a protein source and two plant foods per meal.",
+          "mantra": "Consistency is the real superfood."
+        }
+      ]
+    },
+    {
+      "id": "zone",
+      "title": "Trading in the Zone",
+      "author": "Mark Douglas",
+      "subtitle": "Learn to think in probabilities and accept uncertainty.",
+      "tag": "PROBABILISTIC MINDSET",
+      "color": "#505e78",
+      "overview": "Douglas argues that consistent trading requires a belief system compatible with uncertain outcomes. Traders often know technical analysis but behave as though every trade should be predictable. The chapters examine responsibility, perceived risk, beliefs, and probabilistic thinking. The practical goal is not certainty or guaranteed returns, but a repeatable method executed without demanding that any individual outcome prove your worth.",
+      "chapters": [
+        {
+          "id": "zone-1",
+          "number": 1,
+          "title": "The Road to Success: Fundamental, Technical, or Mental Analysis?",
+          "key": "Technical tools identify potential opportunities, but a mental framework determines whether a trader can execute a method consistently. Trading success cannot be reduced to knowing a chart pattern.",
+          "deep": "A person may understand moving averages and price action yet hesitate on valid signals, chase invalid ones, or change stops. Skills in market analysis and skills in handling uncertainty are distinct and both need development.",
+          "example": "You correctly recognized a setup but cancelled a predefined stop because the loss felt unacceptable.",
+          "practice": "Write one technical skill you possess and one execution behavior it has not yet solved.",
+          "mantra": "A good setup still needs a good decision."
+        },
+        {
+          "id": "zone-2",
+          "number": 2,
+          "title": "The Lure and Dangers of Trading",
+          "key": "Markets offer freedom, rapid feedback and the possibility of gains; these attractions coexist with unusual emotional and financial risks. Trading provides fewer external boundaries than many other activities.",
+          "deep": "Because nobody forces you to stop after a poor decision, personal rules become crucial. The opportunity to act at almost any moment can turn into a compulsion to keep acting. Protecting capital and attention requires defined boundaries.",
+          "example": "You can trade multiple expiries all day, but your process may support only two well-chosen setups.",
+          "practice": "Write the exact situations in which you must not place an order.",
+          "mantra": "Freedom without boundaries becomes danger."
+        },
+        {
+          "id": "zone-3",
+          "number": 3,
+          "title": "Taking Responsibility",
+          "key": "Owning results means accepting that your choices, interpretation and risk controls are your responsibility, even when the market behaves unpredictably. Responsibility is not the same as self-blame.",
+          "deep": "You cannot control price movement or every execution outcome, but you can choose risk, preparation and response. Avoid making the market personally responsible for an emotion. Focus on the levers you can actually adjust.",
+          "example": "Slippage is frustrating. You still need a plan for liquidity and position size instead of assuming it is personal injustice.",
+          "practice": "After the next trade, list what was in your control and what was not.",
+          "mantra": "Responsibility restores choices."
+        },
+        {
+          "id": "zone-4",
+          "number": 4,
+          "title": "Consistency: A State of Mind",
+          "key": "Consistency depends partly on how a trader defines risk, opportunity and failure. Acting from probabilities is easier when one trade does not threaten identity or financial survival.",
+          "deep": "A stable process means individual wins and losses do not dictate whether the next signal is valid. It also requires an actual, tested trading edge. Consistency is not a promise of a constant positive daily result.",
+          "example": "A single stop-loss does not justify replacing your entire system by lunchtime.",
+          "practice": "Track a 20-trade sample of rule compliance separately from returns.",
+          "mantra": "One result does not define the system."
+        },
+        {
+          "id": "zone-5",
+          "number": 5,
+          "title": "The Dynamics of Perception",
+          "key": "Perception is filtered through expectations, memories and beliefs. Traders do not always see the same chart information with the same emotional meaning.",
+          "deep": "A past large loss can make a neutral setup feel dangerous; a recent winning streak may make a weak setup look irresistible. Detect the interpretation you are placing on market information before acting.",
+          "example": "After a painful stop, you see danger everywhere and avoid a valid setup.",
+          "practice": "Write the raw chart facts separately from your personal interpretation.",
+          "mantra": "See the market, not yesterday’s story."
+        },
+        {
+          "id": "zone-6",
+          "number": 6,
+          "title": "The Market’s Perspective",
+          "key": "The market offers possibilities, not promises. A trader benefits from remaining open to information without demanding that reality match a personal forecast.",
+          "deep": "Entering with a thesis is compatible with knowing it can fail. Rigidity makes the trader reinterpret warning signs to protect being right. Flexibility is not random decision-making; it means the plan has explicit invalidation rules.",
+          "example": "A breakout fails your predefined confirmation. You stand aside even though you wanted it to work.",
+          "practice": "Add a “What would invalidate this idea?” line to every pre-trade plan.",
+          "mantra": "My opinion is not a market obligation."
+        },
+        {
+          "id": "zone-7",
+          "number": 7,
+          "title": "The Trader’s Edge: Thinking in Probabilities",
+          "key": "A real edge only tilts the odds over a series of opportunities. Each individual trade remains uncertain. Treat outcomes as variable rather than signs that you can predict the next candle with certainty.",
+          "deep": "A 60% estimated win rate, even if valid, still allows sequences of losses. Sample size, transaction costs and changing conditions matter. Probabilistic thinking helps reduce the demand for certainty before every entry.",
+          "example": "A carefully planned losing trade may still be consistent with your strategy’s tested distribution.",
+          "practice": "Write “This trade can lose and still be valid” next to the risk amount.",
+          "mantra": "My edge is statistical, not prophetic."
+        },
+        {
+          "id": "zone-8",
+          "number": 8,
+          "title": "Working with Your Beliefs",
+          "key": "Beliefs influence what you notice and how you respond. Some beliefs support measured risk-taking while others create hesitation or urgency.",
+          "deep": "You can examine whether a belief is accurate and useful. “Every loss is a mistake” prevents tolerance of normal losses; “Any one trade can lose” encourages risk planning. A belief needs repeated evidence and practice to become operational.",
+          "example": "You notice you feel compelled to make money every day because you equate a red day with failure.",
+          "practice": "Identify one belief behind a trading error and a more evidence-compatible alternative.",
+          "mantra": "I can revise beliefs that sabotage execution."
+        },
+        {
+          "id": "zone-9",
+          "number": 9,
+          "title": "The Nature of Beliefs",
+          "key": "Beliefs can feel certain because they have been reinforced emotionally or through selective attention. Their emotional force does not make them universally true.",
+          "deep": "Recognize when prior learning collides with market uncertainty. A trader who excelled through accuracy in another job may struggle with a market where even correct processes have failures. Beliefs can be updated through direct, manageable experience.",
+          "example": "You used to be rewarded for always having the right answer; in trading, accepting uncertainty is part of competence.",
+          "practice": "Write a rule that honors uncertainty without undermining responsibility.",
+          "mantra": "Confidence does not require certainty."
+        },
+        {
+          "id": "zone-10",
+          "number": 10,
+          "title": "The Impact of Beliefs on Trading",
+          "key": "Beliefs shape attention, expectations and reaction to profits and losses. What you anticipate emotionally can become the driver of entry or exit behavior.",
+          "deep": "If you believe you must avoid any regret, you may close winners prematurely or avoid losses by moving stops. Review the meaning you assign to normal events. A systematic process should make important decisions before emotion peaks.",
+          "example": "You exit early because profit turning into a loss feels unbearable even when the exit signal has not occurred.",
+          "practice": "After each premature exit, note the belief that made discomfort feel dangerous.",
+          "mantra": "I trade my criteria, not my fear of regret."
+        },
+        {
+          "id": "zone-11",
+          "number": 11,
+          "title": "Thinking Like a Trader",
+          "key": "The book culminates in practical mindset work: acceptance of risk, commitment to tested rules, recognition of uncertainty and repetition across a series of opportunities.",
+          "deep": "A trader cannot force the market to provide favorable outcomes. They can train preparation, decision criteria, risk acceptance and consistent execution. Treat practice as a skill-building process, not as proof you have achieved a permanently perfect mental state.",
+          "example": "You take a valid simulated trade with predefined risk and allow it to resolve without ad hoc interference.",
+          "practice": "For your next 20 replay trades, score whether every decision matched your written plan.",
+          "mantra": "I execute one probability at a time."
+        }
+      ]
+    },
+    {
+      "id": "loser",
+      "title": "Best Loser Wins",
+      "author": "Tom Hougaard",
+      "subtitle": "Change how you respond to being wrong and to winning.",
+      "tag": "TRADING & LOSSES",
+      "color": "#886044",
+      "overview": "Hougaard describes trading as a psychological contest with ordinary human instincts: avoiding the pain of loss, trying to secure gains too quickly, and relying on chart knowledge without corresponding mental preparation. His personal experiences challenge readers to examine how they behave under pressure. Some techniques he discusses, including adding to winning trades, increase complexity and risk; this app treats them as concepts to study, not recommendations to copy.",
+      "chapters": [
+        {
+          "id": "loser-1",
+          "number": 1,
+          "title": "Dear Markets",
+          "key": "The opening uses a personal relationship with markets to show how fascination and pain can coexist. The author’s key turn is from trying to decode every market move to understanding his own reactions.",
+          "deep": "Market knowledge helps, but an obsession with being right can conceal harmful habits. Approach losses as information about both your method and your emotional responses. Keep financial risk within boundaries.",
+          "example": "You keep changing indicators instead of examining why you ignore your existing stop.",
+          "practice": "Describe the three trading behaviors you most want to change.",
+          "mantra": "Understand your response, not just the candle."
+        },
+        {
+          "id": "loser-2",
+          "number": 2,
+          "title": "Preface",
+          "key": "The preface introduces failure and loss as unavoidable features of active trading. The issue is how a trader responds, not whether every setback can be prevented.",
+          "deep": "Resilience is not an invitation to lose more money. It is the capacity to accept controlled losses and protect future decisions. Loss tolerance must remain compatible with prudent capital management.",
+          "example": "You hit your planned loss limit and stop without trying to prove toughness by taking more risk.",
+          "practice": "Define the acceptable financial loss before you begin.",
+          "mantra": "Accept losses; never romanticize them."
+        },
+        {
+          "id": "loser-3",
+          "number": 3,
+          "title": "Introduction",
+          "key": "The book frames trading performance as behavior under uncertainty rather than chart expertise alone. Everyday instincts may be poorly suited to financial risk.",
+          "deep": "People naturally prefer a quick sure gain over waiting and often avoid realizing losses. These impulses can conflict with a systematic approach, but not every contrarian action is wise. The strategy still needs empirical justification.",
+          "example": "You notice that you are relieved to close a small winner but keep an invalid losing trade open.",
+          "practice": "Compare how you manage a winner and a loser in your journal.",
+          "mantra": "My instincts deserve inspection."
+        },
+        {
+          "id": "loser-4",
+          "number": 4,
+          "title": "Liar’s Poker",
+          "key": "Trading culture can reward bravado, persuasion and the appearance of certainty. Stories and bold predictions may be mistaken for skill.",
+          "deep": "Confidence is cheap to display, but risk-adjusted repeatability is harder to establish. Judge strategies by process and credible evidence rather than exciting anecdotes.",
+          "example": "A loud trading tip offers no tested edge or realistic loss limit.",
+          "practice": "Write three pieces of evidence you would require before following a setup.",
+          "mantra": "Evidence outranks bravado."
+        },
+        {
+          "id": "loser-5",
+          "number": 5,
+          "title": "The Trading Floor",
+          "key": "The author’s trading-floor experience contrasts the energy of professional markets with the reality of performance pressure. Environment and social signals can influence judgment.",
+          "deep": "Noise, urgency and other traders’ reactions can make imitation tempting. A defined process helps distinguish useful information from crowd emotion.",
+          "example": "A colleague’s sudden call causes you to chase a move without checking your setup.",
+          "practice": "Mute sources of urgency during your primary decision window.",
+          "mantra": "A loud room does not make a trade valid."
+        },
+        {
+          "id": "loser-6",
+          "number": 6,
+          "title": "Everyone Is a Chart Expert",
+          "key": "Recognizing patterns is much easier than consistently acting on a trading system. Having charts and opinions does not automatically create profits.",
+          "deep": "Many traders endlessly seek new indicators because chart study feels productive and less uncomfortable than confronting execution errors. But psychology cannot compensate for a strategy with no measurable edge. Both need testing.",
+          "example": "You spot an accurate support level but enter three times early without waiting for confirmation.",
+          "practice": "Separate chart accuracy and execution quality in your trade review.",
+          "mantra": "Knowledge is not the same as execution."
+        },
+        {
+          "id": "loser-7",
+          "number": 7,
+          "title": "The Curse of Patterns",
+          "key": "Patterns can create an illusion of inevitability. Recognizing something familiar is not enough to know its probability, timing or expected return.",
+          "deep": "Confirmation bias can make price action fit a favorite story. Define valid conditions, failure points and risk before ordering. Beware of extrapolating from attractive historical examples.",
+          "example": "You see an apparent double bottom and enter before your confirmation candle closes.",
+          "practice": "Write the conditions that would disqualify your favorite pattern.",
+          "mantra": "A picture is not a promise."
+        },
+        {
+          "id": "loser-8",
+          "number": 8,
+          "title": "Fighting My Humanness",
+          "key": "The author contrasts natural comfort-seeking responses with behavior demanded by his trading approach. Typical reactions include wanting immediate relief from uncertainty and losses.",
+          "deep": "Do not interpret this as needing to be reckless or opposite to the crowd for its own sake. Instead, notice which automatic reactions contradict your tested plan. Work with small size and rehearsed controls while practicing new responses.",
+          "example": "Your fear urges you to move a stop farther away; your written plan requires accepting the defined loss.",
+          "practice": "Practice one rule that is emotionally uncomfortable but clearly risk controlled.",
+          "mantra": "Comfort does not define correctness."
+        },
+        {
+          "id": "loser-9",
+          "number": 9,
+          "title": "Disgust",
+          "key": "Strong aversion to losing, mistakes and market behavior can trigger impulsive reactions. The author explores how such emotion may interfere with decision-making.",
+          "deep": "A disgust response can narrow attention to avoiding pain or proving a point. When this occurs, the highest-value decision may be to stop. Analyze what the emotion means to you later, outside the active market.",
+          "example": "A quick stop-loss feels humiliating and provokes an impulse to re-enter instantly.",
+          "practice": "Set a ten-minute no-order reset after strong aversion or anger.",
+          "mantra": "I will not trade to erase a feeling."
+        },
+        {
+          "id": "loser-10",
+          "number": 10,
+          "title": "The Drifter Mind",
+          "key": "Attention drifts toward fantasy, fear, prediction and distraction. Performance deteriorates when the mind leaves the actual current task.",
+          "deep": "Repeatedly practice returning to observable information and a written method. A wandering thought is not a moral problem; acting on it without checking your criteria is the risk.",
+          "example": "During a slow session, you imagine your future profit and enter an unplanned trade.",
+          "practice": "Name your distraction; return to the next specific checklist item.",
+          "mantra": "Return to what is observable."
+        },
+        {
+          "id": "loser-11",
+          "number": 11,
+          "title": "Trading Through a Slump",
+          "key": "A slump tests confidence and reveals how results affect risk decisions. Changing everything after a small sample can deepen instability.",
+          "deep": "First distinguish a normal losing streak from evidence that market conditions or the strategy have changed. Consider transaction costs, volatility, execution errors and risk limits. If uncertain, reduce exposure or return to demo rather than revenge trade.",
+          "example": "After four losses you review the sample and pause live execution instead of doubling size.",
+          "practice": "Create a slump protocol including reduced size, review and explicit return criteria.",
+          "mantra": "A slump requires analysis, not desperation."
+        },
+        {
+          "id": "loser-12",
+          "number": 12,
+          "title": "Embracing Failure",
+          "key": "Controlled failures can be a cost of participation in a probabilistic activity. Learning requires examining mistakes and legitimate losses without personal collapse.",
+          "deep": "Acceptance never means tolerating unlimited damage. Separate a valid stop from a broken rule, log both accurately and improve the controllable part. A failed trade can teach; it does not need to become an identity story.",
+          "example": "You accept a 1R loss and do not change your position size in anger.",
+          "practice": "For every red trade, record “valid loss” or “process error” with a reason.",
+          "mantra": "A measured loss can be handled well."
+        },
+        {
+          "id": "loser-13",
+          "number": 13,
+          "title": "Best Loser Wins",
+          "key": "The central theme is that disciplined responses to losses and discomfort may distinguish a durable trader from someone who pursues emotional relief. The author also discusses approaches to managing winners differently from losers.",
+          "deep": "The book challenges reflexive early profit-taking and suggests studying how a method handles favorable moves. However, adding to winners can increase exposure and risk; never copy this technique without a validated system, explicit aggregate risk control, and suitable experience.",
+          "example": "A planned stop is hit. You take the loss, review it later and keep the next trade independent of the last.",
+          "practice": "Grade the quality of how you accepted a loss instead of trying to glorify losing money.",
+          "mantra": "Lose responsibly; remain capable of the next good decision."
+        },
+        {
+          "id": "loser-14",
+          "number": 14,
+          "title": "The Ideal Mindset",
+          "key": "The closing themes combine mental preparation, self-observation, willingness to face discomfort and structured risk control. The goal is a practiced approach rather than dramatic motivation.",
+          "deep": "Prepare for both winning and losing scenarios. Keep humility during success and steadiness after setbacks. A durable mindset is supported by records and practice, not by claiming fear or uncertainty have vanished.",
+          "example": "You end your session when your plan says stop, regardless of whether the last trade was green or red.",
+          "practice": "Write your ideal behavior during three states: after loss, after win and during boredom.",
+          "mantra": "Professionalism is repeated behavior."
+        }
+      ]
+    }
+  ],
+  "mantras": [
+    {
+      "category": "Discipline",
+      "text": "My plan decides; my emotions do not."
+    },
+    {
+      "category": "Discipline",
+      "text": "No setup is a valid outcome."
+    },
+    {
+      "category": "Discipline",
+      "text": "I wait for the candle to finish."
+    },
+    {
+      "category": "Discipline",
+      "text": "My first responsibility is to protect capital."
+    },
+    {
+      "category": "Discipline",
+      "text": "A trade taken outside my rules is not a victory, even if it pays."
+    },
+    {
+      "category": "Discipline",
+      "text": "My maximum loss is defined before entry."
+    },
+    {
+      "category": "Discipline",
+      "text": "I measure rule compliance separately from profit."
+    },
+    {
+      "category": "Discipline",
+      "text": "I can stop after a good day."
+    },
+    {
+      "category": "Discipline",
+      "text": "I can stop after a bad day."
+    },
+    {
+      "category": "Discipline",
+      "text": "I do not chase missed trades."
+    },
+    {
+      "category": "Emotions",
+      "text": "An urgent feeling is not an instruction."
+    },
+    {
+      "category": "Emotions",
+      "text": "A losing trade does not demand a recovery trade."
+    },
+    {
+      "category": "Emotions",
+      "text": "The market owes me nothing."
+    },
+    {
+      "category": "Emotions",
+      "text": "I can observe anger without entering an order."
+    },
+    {
+      "category": "Emotions",
+      "text": "Fear is information to examine, not a command."
+    },
+    {
+      "category": "Emotions",
+      "text": "I accept uncertainty without abandoning controls."
+    },
+    {
+      "category": "Emotions",
+      "text": "I do not increase size to soothe discomfort."
+    },
+    {
+      "category": "Emotions",
+      "text": "I can step away while the feeling passes."
+    },
+    {
+      "category": "Self-talk",
+      "text": "I made a mistake; I can repair the process."
+    },
+    {
+      "category": "Self-talk",
+      "text": "A thought is not a fact."
+    },
+    {
+      "category": "Self-talk",
+      "text": "My identity is bigger than this trade."
+    },
+    {
+      "category": "Self-talk",
+      "text": "I do not need to feel confident to act carefully."
+    },
+    {
+      "category": "Self-talk",
+      "text": "Self-respect includes honest accountability."
+    },
+    {
+      "category": "Self-talk",
+      "text": "I can learn without insulting myself."
+    },
+    {
+      "category": "Self-talk",
+      "text": "Today’s behavior is trainable."
+    },
+    {
+      "category": "Self-talk",
+      "text": "A setback is not a verdict."
+    },
+    {
+      "category": "Mind & food",
+      "text": "Food supports health; it does not guarantee performance."
+    },
+    {
+      "category": "Mind & food",
+      "text": "A balanced meal is a helpful routine."
+    },
+    {
+      "category": "Mind & food",
+      "text": "I nourish my body consistently."
+    },
+    {
+      "category": "Mind & food",
+      "text": "Sleep and recovery matter to decision quality."
+    },
+    {
+      "category": "Mind & food",
+      "text": "One small healthy habit is worth repeating."
+    },
+    {
+      "category": "Reset",
+      "text": "Pause. Observe. Check the plan. Decide."
+    },
+    {
+      "category": "Reset",
+      "text": "I choose the next right action."
+    },
+    {
+      "category": "Reset",
+      "text": "I can be patient for one more minute."
+    },
+    {
+      "category": "Reset",
+      "text": "I am allowed to finish trading for today."
+    },
+    {
+      "category": "Reset",
+      "text": "Practice over perfection."
+    },
+    {
+      "category": "Reset",
+      "text": "My goal is behavioral consistency, not emotional numbness."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Which response matches the mental-game mapping approach?",
+      "o": [
+        "Ignore sensations and place the trade",
+        "Record trigger, thoughts, body signals, behavior and result",
+        "Judge the day only by net profit"
+      ],
+      "a": 1,
+      "why": "A useful emotional map describes the entire sequence early enough to intervene."
+    },
+    {
+      "q": "What is ACT-style cognitive defusion?",
+      "o": [
+        "Removing every negative thought",
+        "Treating a thought as a thought rather than a command",
+        "Proving your thoughts are false every time"
+      ],
+      "a": 1,
+      "why": "Defusion changes your relationship to thoughts so you can act by your values."
+    },
+    {
+      "q": "After two losses you feel a strong urge to win it back. Best next step?",
+      "o": [
+        "Double position size",
+        "Pause orders and apply the predefined risk rule",
+        "Trade the opposite side without checking"
+      ],
+      "a": 1,
+      "why": "Recovery pressure is a warning signal. Follow risk limits and your stop routine."
+    },
+    {
+      "q": "Which conclusion about the microbiome is supported?",
+      "o": [
+        "One probiotic cures all negative thinking",
+        "All associations demonstrate causation",
+        "Gut–brain communication exists, but many specific clinical claims remain uncertain"
+      ],
+      "a": 2,
+      "why": "The book explicitly distinguishes mechanisms and correlations from proved causal treatment."
+    },
+    {
+      "q": "Which everyday vegetarian meal has a clear protein source?",
+      "o": [
+        "Plain tea and biscuits",
+        "Rice only",
+        "Dal, vegetables and roti with curd"
+      ],
+      "a": 2,
+      "why": "Pulses and dairy can add meaningful protein; total needs depend on the person."
+    },
+    {
+      "q": "A trade followed every rule but lost money. It is...",
+      "o": [
+        "Proof you are a bad trader",
+        "A process-compliant losing trade",
+        "An excuse to abandon stop-losses"
+      ],
+      "a": 1,
+      "why": "Short-term outcomes and decision quality are different measures."
+    },
+    {
+      "q": "You are bored and no setup has appeared. What is the compliant action?",
+      "o": [
+        "Force a small trade",
+        "Stop using a strategy",
+        "Wait or finish without a trade"
+      ],
+      "a": 2,
+      "why": "Not trading can be the correct execution of a plan."
+    },
+    {
+      "q": "A recurring thought says “I never improve.” A helpful response?",
+      "o": [
+        "Accept it as a permanent fact",
+        "Call it a familiar thought and review one behavior",
+        "Increase risk to disprove it"
+      ],
+      "a": 1,
+      "why": "Notice the thought and take a practical values-guided step."
+    },
+    {
+      "q": "What does the Indian vegetarian book emphasize?",
+      "o": [
+        "Only exotic imported foods",
+        "Repeatable balanced meals using accessible ingredients",
+        "Removing all carbohydrates"
+      ],
+      "a": 1,
+      "why": "Its approach combines colorful plants, useful carbs, protein and fats with practical meal planning."
+    },
+    {
+      "q": "What indicates improving trading discipline?",
+      "o": [
+        "Every trade wins",
+        "Higher rule-compliance rate across sessions",
+        "More trades after losses"
+      ],
+      "a": 1,
+      "why": "Behavioral consistency is directly measurable and less noisy than short-term results."
+    }
+  ]
+};</script><script>(()=>{'use strict';
+const DATA=window.READER_CONTENT,BOOKS=DATA.books,MANTRAS=DATA.mantras;
+const $=(id)=>document.getElementById(id);const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const saved=(()=>{try{return JSON.parse(localStorage.getItem('rkReaderV1')||'{}')}catch{return {}}})();
+const S=Object.assign({theme:'sepia',font:19,tab:'library',book:'mental',chapter:0,read:{},bookmarks:[],favoriteMantras:[],sessions:[],draft:{},quizIndex:0,quizAnswer:null,mantraFilter:'All',reps:{date:'',done:[]},lastNote:'',timerEnd:0},saved);
+let view='library',timerHandle=null,toastHandle=null;
+function persist(){try{localStorage.setItem('rkReaderV1',JSON.stringify(S))}catch(e){notify('Storage unavailable; progress may not be saved.')}}
+function notify(s){let t=$('toast');t.textContent=s;t.classList.add('visible');clearTimeout(toastHandle);toastHandle=setTimeout(()=>t.classList.remove('visible'),2500)}
+function svg(n){let paths={library:'<rect x="3" y="4" width="5" height="16" rx="1"/><rect x="10" y="4" width="5" height="16" rx="1"/><path d="m18 5 3 14"/>',read:'<path d="M12 7v14M3 18V5c3-1.5 6-1.5 9 0 3-1.5 6-1.5 9 0v13c-3-1.5-6-1.5-9 0-3-1.5-6-1.5-9 0Z"/>',mantras:'<path d="M4 16.5V20h3.5L20 7.5 16.5 4 4 16.5Z"/><path d="m14.5 6 3.5 3.5"/>',practice:'<path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/>',stats:'<path d="M3 20V10m6 10V4m6 16v-7m6 7V8"/>'};return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[n]}</svg>`}
+function switchView(next){view=next;S.tab=next;persist();render();window.scrollTo(0,0)}
+function readPct(b){return Math.round(b.chapters.filter(ch=>S.read[ch.id]).length*100/b.chapters.length)}
+function totalRead(){return BOOKS.reduce((s,b)=>s+b.chapters.filter(c=>S.read[c.id]).length,0)}
+function getBook(){return BOOKS.find(b=>b.id===S.book)||BOOKS[0]}
+function chapterIndex(i){let b=getBook();S.chapter=Math.max(0,Math.min(b.chapters.length-1,i));S.tab='reader';view='reader';persist();render();window.scrollTo(0,0)}
+function openBook(id){S.book=id;let b=getBook();let next=b.chapters.findIndex(c=>!S.read[c.id]);chapterIndex(next===-1?0:next)}
+function openOutline(id){S.book=id;switchView('outline')}
+function render(){document.body.dataset.theme=S.theme;document.documentElement.style.setProperty('--reader-size',S.font+'px');$('settingsPanel').hidden=true;$('main').innerHTML=({library,reader,outline,mantras,practice,stats,quiz,search})[view]();$('nav').innerHTML=['library','reader','mantras','practice','stats'].map(x=>`<button type="button" aria-label="${x}" class="${(x===view||(x==='reader'&&view==='outline'))?'on':''}" data-act="nav" data-id="${x}">${svg(x)}<span>${{library:'Library',reader:'Read',mantras:'Mantras',practice:'Practice',stats:'Progress'}[x]}</span></button>`).join('');$('barTitle').textContent=view==='reader'? 'READING ROOM' : {library:'YOUR DAILY READER',outline:'CHAPTERS',mantras:'DAILY AFFIRMATIONS',practice:'DISCIPLINE LAB',stats:'YOUR JOURNEY',quiz:'KNOWLEDGE CHECK',search:'SEARCH THE LIBRARY'}[view];if(view==='practice')setupTimer()}
+function library(){let last=BOOKS.find(b=>b.id===S.book)||BOOKS[0];let today=MANTRAS[((new Date().getFullYear()*372+Math.floor(Date.now()/86400000))%MANTRAS.length)];return `<section class="view"><div class="eyebrow">MIND • DISCIPLINE • NOURISHMENT</div><h1 class="h1">A quieter mind.<br>A stronger process.</h1><p class="intro">A personal Kindle-inspired study companion. Six books distilled into original, chapter-by-chapter explanations and practical exercises.</p><div class="hero" style="margin:19px 0"><span class="pill">TODAY'S MANTRA</span><div class="hero-quote">${escapeHtml(today.text)}</div><div class="row"><span class="small">A brief reset before trading</span><button class="btn tiny" data-act="nav" data-id="mantras">More mantras →</button></div></div><div class="row"><h2 class="section-title">Your bookshelf</h2><span class="small">${totalRead()} / ${BOOKS.reduce((s,b)=>s+b.chapters.length,0)} chapters</span></div><div class="shelf">${BOOKS.map(b=>`<button class="bookcard" data-act="outline" data-id="${b.id}" aria-label="Open ${escapeHtml(b.title)}"><div class="bookcover" style="--cover:${b.color}"><span class="cover-kicker">${escapeHtml(b.tag)}</span><span class="cover-title">${escapeHtml(b.title)}</span><span class="cover-author">${escapeHtml(b.author)}</span></div><div class="book-info"><strong>${escapeHtml(b.title)}</strong><span>${b.chapters.length} study chapters · ${readPct(b)}% complete</span><div class="progress"><i style="width:${readPct(b)}%"></i></div></div></button>`).join('')}</div><h2 class="section-title">Keep going</h2><div class="card row"><div><strong>${escapeHtml(last.title)}</strong><div class="small">Continue the next concept</div></div><button class="btn tiny" data-act="open" data-id="${last.id}">Read →</button></div><p class="small" style="margin-top:18px">Independent study summaries, examples and mantras — not the full texts or original recipes. Saved privately on this device.</p></section>`}
+function outline(){let b=getBook();return `<section class="view"><button class="btn secondary tiny" data-act="nav" data-id="library">← Library</button><div class="eyebrow" style="margin-top:20px">${escapeHtml(b.tag)} · ${b.chapters.length} CHAPTERS</div><h1 class="h1">${escapeHtml(b.title)}</h1><p class="small">By ${escapeHtml(b.author)}</p><div class="card" style="margin:20px 0"><h3 style="font:22px Georgia,serif;margin:0 0 12px">Complete book overview</h3><p style="font:17px/1.7 Georgia,serif;margin:0">${escapeHtml(b.overview)}</p><div class="row" style="margin-top:20px"><span class="small">${readPct(b)}% completed</span><button class="btn tiny" data-act="open" data-id="${b.id}">Continue reading →</button></div><div class="progress" style="margin-top:12px"><i style="width:${readPct(b)}%"></i></div></div><h2 class="section-title">Chapter-by-chapter guide</h2><div class="chapter-list">${b.chapters.map((c,i)=>`<button class="chapter-row" data-act="gochapter" data-index="${i}"><span>${String(i+1).padStart(2,'0')}</span><span style="flex:1"><strong>${escapeHtml(c.title)}</strong><small>${S.read[c.id]?'✓ Finished · ':'Read '}explanation, example, practice & mantra</small></span><span aria-hidden="true">›</span></button>`).join('')}</div></section>`}
+function reader(){let b=getBook(),c=b.chapters[S.chapter]||b.chapters[0],savedBookmark=S.bookmarks.includes(c.id),done=!!S.read[c.id];return `<section class="view reader"><div class="reader-head"><button class="iconbtn" data-act="outline" data-id="${b.id}" aria-label="Chapter index">☷</button><span class="breadcrumb">${escapeHtml(b.title)} · ${S.chapter+1}/${b.chapters.length}</span><button class="iconbtn ${savedBookmark?'active':''}" data-act="bookmark" title="Bookmark this chapter">${savedBookmark?'◆':'◇'}</button><button class="iconbtn" data-act="font" title="Text size">Aa</button></div><div class="meter" style="margin-bottom:14px"><b style="width:${(S.chapter+1)/b.chapters.length*100}%"></b></div><article class="paper"><div class="chapter-no">STUDY CHAPTER ${String(S.chapter+1).padStart(2,'0')} · ORIGINAL SUMMARY</div><h1>${escapeHtml(c.title)}</h1><p class="drop-lead">${escapeHtml(c.key)}</p><h2>The deeper idea</h2>${splitParagraphs(c.deep).map(p=>`<p>${escapeHtml(p)}</p>`).join('')}<h2>How this looks in real life</h2><p>${escapeHtml(c.example)}</p><div class="apply"><b>PUT IT INTO PRACTICE</b><p>${escapeHtml(c.practice)}</p></div><div class="quote">“${escapeHtml(c.mantra)}”</div><div class="line"></div><div class="small">This is an original interpretation for personal study, not a reproduction of the source book. Revisit the original chapter for full arguments and examples.</div></article><div class="chapter-foot"><button class="btn secondary tiny" data-act="prev" ${S.chapter===0?'disabled':''}>← Previous</button><button class="btn ${done?'secondary':''} tiny" data-act="mark">${done?'✓ Finished':'Mark as read'}</button><button class="btn secondary tiny" data-act="next" ${S.chapter===b.chapters.length-1?'disabled':''}>Next →</button></div><div class="card"><div class="row"><strong>Chapter index</strong><button class="btn secondary tiny" data-act="toggleOutline">Expand / collapse</button></div><div class="chapter-drawer" id="drawer">${b.chapters.map((item,i)=>`<button class="${i===S.chapter?'sel':''}" data-act="gochapter" data-index="${i}">${i+1}. ${escapeHtml(item.title)} ${S.read[item.id]?'✓':''}</button>`).join('')}</div></div></section>`}
+function splitParagraphs(s){return s.split(/\n\n/).filter(Boolean)}
+function mantras(){let filters=['All','Discipline','Emotions','Self-talk','Mind & food','Reset','Saved'];let entries=MANTRAS.map((m,i)=>({...m,id:i})).filter(m=>S.mantraFilter==='All'||(S.mantraFilter==='Saved'?S.favoriteMantras.includes(m.id):m.category===S.mantraFilter));let date=new Date(Date.now()-new Date().getTimezoneOffset()*60000).toISOString().slice(0,10);if(!S.reps||S.reps.date!==date){S.reps={date,done:[]};persist()}let chosen=[0,2,10,20,32],ticks=S.reps.done.length;return `<section class="view"><div class="eyebrow">SHORT • BELIEVABLE • ACTIONABLE</div><h1 class="h1">The mantra room</h1><p class="intro">Original reminder statements inspired by the books. Use them to pause and reconnect with your next action, not to force uncomfortable feelings away.</p><div class="card" style="margin:18px 0 23px"><div class="row"><strong style="font:22px Georgia,serif">Daily 5 × 3</strong><span class="pill" id="repScore">${ticks} / 15</span></div><p class="small">Repeat each of five mantras three times. Tap each circle as you finish. Your count resets each new day.</p><div class="meter" style="margin:12px 0 17px"><b id="repMeter" style="width:${Math.round(ticks/15*100)}%"></b></div>${chosen.map((id)=>`<div style="padding:11px 0;border-bottom:1px solid var(--hair)"><div style="font:16px/1.45 Georgia,serif;margin-bottom:10px">${escapeHtml(MANTRAS[id].text)}</div><div class="control-row">${[1,2,3].map(r=>{let key=id+'-'+r,on=S.reps.done.includes(key);return `<button class="iconbtn ${on?'active':''}" data-act="rep" data-id="${key}" aria-label="Repetition ${r} for mantra">${on?'✓':r}</button>`}).join('')}</div></div>`).join('')}</div><h2 class="section-title">Mantra collection</h2><div class="tabs" role="group" aria-label="Mantra categories">${filters.map(f=>`<button data-act="filter" data-id="${escapeHtml(f)}" class="${f===S.mantraFilter?'sel':''}">${escapeHtml(f)}</button>`).join('')}</div>${entries.length?entries.map(m=>`<div class="mantra"><div class="row"><span class="eyebrow" style="letter-spacing:1px">${escapeHtml(m.category)}</span><button class="iconbtn ${S.favoriteMantras.includes(m.id)?'active':''}" data-act="favorite" data-index="${m.id}" aria-label="Favorite">${S.favoriteMantras.includes(m.id)?'♥':'♡'}</button></div><div class="words">${escapeHtml(m.text)}</div><button class="btn secondary tiny" data-act="copy" data-index="${m.id}">Copy mantra</button></div>`).join(''):'<div class="notice">No saved mantras yet. Tap ♡ to keep your favorites.</div>'}</section>`}
+function practice(){let d=S.draft,checklist=[['plan','I wrote the setup, entry, exit and stop-loss before trading.'],['risk','I kept size and maximum daily loss within my limits.'],['patience','I did not chase or force a trade out of boredom.'],['pause','I paused or stopped when negative emotions escalated.'],['review','I reviewed my behavior without personal insults.']];let checked=checklist.filter(([key])=>d[key]).length;return `<section class="view"><div class="eyebrow">PROCESS BEFORE P&L</div><h1 class="h1">Discipline lab</h1><p class="intro">A 30-session reset built for rule adherence. Use demo or replay while training your habits. No broker connection; no trading orders.</p><div class="stats-grid" style="margin:18px 0"><div class="metric"><b>${S.sessions.length}</b><span>Sessions logged</span></div><div class="metric"><b>${S.sessions.length?Math.round(S.sessions.reduce((sum,x)=>sum+x.score,0)/S.sessions.length):0}%</b><span>Avg. compliance</span></div><div class="metric"><b>${S.sessions.filter(x=>x.score===100).length}</b><span>Perfect sessions</span></div></div><div class="card"><div class="row"><h2 style="font:23px Georgia,serif;margin:0">Today's commitment</h2><span class="pill">${checked}/5 RULES</span></div><p class="small">Check only what you genuinely followed at the end of the session.</p>${checklist.map(([k,t])=>`<label class="habit"><input type="checkbox" data-field="${k}" ${d[k]?'checked':''}/><span>${escapeHtml(t)}</span></label>`).join('')}<div class="meter" style="margin-top:16px"><b style="width:${checked*20}%"></b></div><div class="editor-row"><label for="emotion">Strongest emotional trigger</label><select class="input" id="emotion" data-field="emotion"><option value="none">No significant emotional trigger</option>${['FOMO','Revenge','Fear of loss','Anger','Boredom','Negative self-talk','Overconfidence'].map(x=>`<option value="${x}" ${d.emotion===x?'selected':''}>${x}</option>`).join('')}</select></div><div class="editor-row"><label for="incident">What happened? What will I do differently?</label><textarea class="input" id="incident" data-field="incident" placeholder="Example: I chased a candle after missing my entry. Next session, I will wait for a new complete setup.">${escapeHtml(d.incident||'')}</textarea></div><button class="btn" data-act="saveSession">Save today's session · ${checked*20}%</button></div><h2 class="section-title">90-second reset</h2><div class="card"><p class="intro" style="margin-top:0">When you feel compelled to recover losses, pause orders and observe the urge. This countdown is a reflection aid, not a trading lock.</p><div style="font:44px Georgia,serif;text-align:center;margin:14px 0" id="timerDisplay">01:30</div><div class="row"><button class="btn" data-act="startTimer">Start reset</button><button class="btn secondary" data-act="cancelTimer">Clear</button></div></div><h2 class="section-title">Knowledge check</h2><div class="card row"><div><strong>10 questions</strong><p class="small" style="margin:4px 0">Test real concepts from the study collection.</p></div><button class="btn tiny" data-act="nav" data-id="quiz">Start →</button></div></section>`}
+function setupTimer(){clearInterval(timerHandle);let label=$('timerDisplay');if(!label)return;let update=()=>{let sec=S.timerEnd?Math.max(0,Math.ceil((S.timerEnd-Date.now())/1000)):90;label.textContent=`${String(Math.floor(sec/60)).padStart(2,'0')}:${String(sec%60).padStart(2,'0')}`;if(!sec&&S.timerEnd){S.timerEnd=0;clearInterval(timerHandle);notify('Reset complete. Decide from your written plan.')}};update();timerHandle=setInterval(update,300)}
+function stats(){let sessions=S.sessions.slice().reverse().slice(0,8).reverse();let max=BOOKS.reduce((n,b)=>n+b.chapters.length,0);return `<section class="view"><div class="eyebrow">BEHAVIOR OVER OUTCOME</div><h1 class="h1">Your progress</h1><p class="intro">Measure what you can control: completing lessons, documenting mistakes and following your rules.</p><div class="stats-grid" style="margin:22px 0"><div class="metric"><b>${totalRead()}</b><span>Chapters read</span></div><div class="metric"><b>${S.bookmarks.length}</b><span>Bookmarks</span></div><div class="metric"><b>${S.sessions.length}</b><span>Practice logs</span></div></div><div class="card"><div class="row"><strong>Reading completion</strong><span class="small">${totalRead()} of ${max}</span></div><div class="meter" style="margin:15px 0"><b style="width:${Math.round(totalRead()/max*100)}%"></b></div>${BOOKS.map(b=>`<div class="row" style="font-size:12px;margin-top:13px"><span>${escapeHtml(b.title)}</span><span>${readPct(b)}%</span></div><div class="progress" style="margin-top:6px"><i style="width:${readPct(b)}%"></i></div>`).join('')}</div><h2 class="section-title">Recent discipline scores</h2><div class="card"><p class="small" style="margin:0">Each bar represents the five behavior commitments checked in a session.</p>${sessions.length?`<div class="stat-chart">${sessions.map((x,i)=>`<div class="bar" style="height:${Math.max(5,x.score)}%"><span>${x.score}%</span></div>`).join('')}</div><div class="small" style="text-align:center;margin-top:30px">Oldest → latest</div>`:'<p class="notice">No sessions yet. Log a session in Discipline Lab to see your trend.</p>'}</div><h2 class="section-title">Bookmarked chapters</h2><div class="chapter-list">${S.bookmarks.length?S.bookmarks.map(id=>{let b=BOOKS.find(b=>b.chapters.some(c=>c.id===id)),i=b.chapters.findIndex(c=>c.id===id);return `<button class="chapter-row" data-act="bookmarkOpen" data-id="${b.id}" data-index="${i}"><span>♧</span><span style="flex:1"><strong>${escapeHtml(b.chapters[i].title)}</strong><small>${escapeHtml(b.title)}</small></span>›</button>`}).join(''):'<div class="notice">Bookmark any chapter from the reader to find it here.</div>'}</div><h2 class="section-title">Your data</h2><div class="card"><p class="small">All reading and practice data is stored locally on this device. Export it for your records, or import a previous backup.</p><div class="control-row"><button class="btn secondary tiny" data-act="export">Export backup</button><button class="btn secondary tiny" data-act="import">Import backup</button><input type="file" id="importFile" accept="application/json,.json" style="display:none" /></div></div></section>`}
+function quiz(){let i=S.quizIndex,q=DATA.quiz[i],done=S.quizAnswer!==null;return `<section class="view reader"><button class="btn secondary tiny" data-act="nav" data-id="practice">← Practice</button><div class="eyebrow" style="margin:25px 0 10px">QUESTION ${i+1} OF ${DATA.quiz.length}</div><div class="meter"><b style="width:${(i+1)/DATA.quiz.length*100}%"></b></div><h1 class="h1" style="font-size:30px;margin-top:22px">${escapeHtml(q.q)}</h1><div class="card">${q.o.map((o,k)=>`<button class="quiz-choice ${done&&k===q.a?'right':''} ${done&&k===S.quizAnswer&&k!==q.a?'wrong':''}" data-act="answer" data-index="${k}" ${done?'disabled':''}>${['A','B','C'][k]}. ${escapeHtml(o)}</button>`).join('')}${done?`<div class="notice"><b>${S.quizAnswer===q.a?'Correct!':'Review the concept.'}</b> ${escapeHtml(q.why)}</div>`:''}<button class="btn" style="margin-top:20px" data-act="nextQ" ${done?'':'disabled'}>${i===DATA.quiz.length-1?'Finish quiz':'Next question →'}</button></div></section>`}
+function search(){let q=String(S.search||'').trim().toLowerCase();let matches=[];if(q.length>1){BOOKS.forEach(b=>b.chapters.forEach((c,i)=>{let hay=(c.title+' '+c.key+' '+c.deep+' '+c.example+' '+c.practice).toLowerCase();if(hay.includes(q))matches.push({b,c,i})}))}return `<section class="view"><h1 class="h1">Find a concept</h1><input class="input" id="searchInput" placeholder="Try fear, patience, protein, self-talk…" value="${escapeHtml(S.search||'')}" autocomplete="off" aria-label="Search chapters"/><div class="small" style="margin:14px 0">${q.length>1?matches.length+' matching chapters':'Type at least 2 letters to search the guides'}</div><div id="searchResults" class="chapter-list">${matches.map(({b,c,i})=>`<button class="chapter-row" data-act="bookmarkOpen" data-id="${b.id}" data-index="${i}"><span>⌕</span><span style="flex:1"><strong>${escapeHtml(c.title)}</strong><small>${escapeHtml(b.title)}</small></span>›</button>`).join('')}</div></section>`}
+function handle(act,el){let id=el.dataset.id,idx=Number(el.dataset.index||0);switch(act){case'nav':if(id==='reader'&&view!=='reader')view='reader',render(),window.scrollTo(0,0);else switchView(id);break;case'outline':openOutline(id);break;case'open':openBook(id);break;case'gochapter':chapterIndex(idx);break;case'bookmarkOpen':S.book=id;chapterIndex(idx);break;case'prev':chapterIndex(S.chapter-1);break;case'next':chapterIndex(S.chapter+1);break;case'bookmark':{let c=getBook().chapters[S.chapter].id;S.bookmarks=S.bookmarks.includes(c)?S.bookmarks.filter(x=>x!==c):[...S.bookmarks,c];persist();render();notify(S.bookmarks.includes(c)?'Bookmark saved':'Bookmark removed');break}case'mark':{let c=getBook().chapters[S.chapter].id;S.read[c]=!S.read[c];persist();render();notify(S.read[c]?'Chapter completed':'Marked unread');break}case'font':$('settingsPanel').hidden=false;break;case'toggleOutline':$('drawer').classList.toggle('show');break;case'filter':S.mantraFilter=id;persist();render();break;case'rep':{S.reps.done=S.reps.done.includes(id)?S.reps.done.filter(x=>x!==id):[...S.reps.done,id];persist();el.classList.toggle('active',S.reps.done.includes(id));el.textContent=S.reps.done.includes(id)?'✓':id.split('-')[1];$('repScore').textContent=S.reps.done.length+' / 15';$('repMeter').style.width=Math.round(S.reps.done.length/15*100)+'%';if(S.reps.done.length===15)notify('All 15 repetitions completed today');break;}case'favorite':S.favoriteMantras=S.favoriteMantras.includes(idx)?S.favoriteMantras.filter(x=>x!==idx):[...S.favoriteMantras,idx];persist();render();break;case'copy':{let t=MANTRAS[idx].text;const copy=()=>{let ta=document.createElement('textarea');ta.value=t;document.body.append(ta);ta.select();document.execCommand('copy');ta.remove();notify('Mantra copied')};if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(()=>notify('Mantra copied')).catch(copy)}else copy();break}case'saveSession':{let today=new Date().toISOString().slice(0,10);let score=['plan','risk','patience','pause','review'].filter(x=>S.draft[x]).length*20;S.sessions.push({id:Date.now(),day:today,score,emotion:S.draft.emotion||'none',incident:String(S.draft.incident||'').slice(0,3000)});S.draft={};persist();render();notify('Session saved at '+score+'% compliance');break}case'startTimer':S.timerEnd=Date.now()+90000;setupTimer();break;case'cancelTimer':S.timerEnd=0;setupTimer();break;case'answer':S.quizAnswer=idx;persist();render();break;case'nextQ':if(S.quizIndex<DATA.quiz.length-1)S.quizIndex++;else{S.quizIndex=0;switchView('practice');notify('Quiz completed');break}S.quizAnswer=null;persist();render();break;case'export':{if(window.RKNative){window.RKNative.exportBackup(JSON.stringify({app:'Mindful Reader by RK',version:1,data:S}));notify('Choose where to save backup');break;}let blob=new Blob([JSON.stringify({app:'Mindful Reader by RK',version:1,data:S},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='mindful-reader-backup.json';document.body.append(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000);notify('Backup prepared');break}case'import':if(window.RKNative){window.RKNative.importBackup();break;} $('importFile').click();break}}
+$('main').addEventListener('click',e=>{let target=e.target.closest('[data-act]');if(target&&!target.disabled)handle(target.dataset.act,target)});$('nav').addEventListener('click',e=>{let t=e.target.closest('[data-act]');if(t)handle(t.dataset.act,t)});
+$('main').addEventListener('change',e=>{let t=e.target;if(t.dataset.field){let value=t.type==='checkbox'?t.checked:t.value;S.draft[t.dataset.field]=value;persist();if(t.type==='checkbox'){let sc=t.closest('.card').querySelector('.pill');if(sc){let n=['plan','risk','patience','pause','review'].filter(k=>S.draft[k]).length;sc.textContent=n+'/5 RULES';t.closest('.card').querySelector('.meter b').style.width=n*20+'%';t.closest('.card').querySelector('[data-act=saveSession]').textContent=`Save today's session · ${n*20}%`}}}if(t.id==='importFile'&&t.files[0]){let f=t.files[0];if(f.size>2000000)return notify('Backup file is too large');let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);if(d.app!=='Mindful Reader by RK'||!d.data||!Array.isArray(d.data.sessions))throw Error('Invalid');Object.assign(S,d.data);persist();render();notify('Backup restored')}catch{notify('Invalid backup file')}};r.readAsText(f)}});
+$('main').addEventListener('input',e=>{let t=e.target;if(t.id==='searchInput'){let pos=t.selectionStart;S.search=t.value;let content=search();let tmp=document.createElement('div');tmp.innerHTML=content;$('searchResults').innerHTML=tmp.querySelector('#searchResults').innerHTML;$('searchResults').previousElementSibling.textContent=tmp.querySelector('#searchResults').previousElementSibling.textContent;t.focus();t.setSelectionRange(pos,pos)}else if(t.dataset.field){S.draft[t.dataset.field]=t.value;persist()}});
+$('searchButton').addEventListener('click',()=>switchView('search'));$('settingsButton').addEventListener('click',()=>{$('settingsPanel').hidden=!$('settingsPanel').hidden});$('closeSettings').addEventListener('click',()=>{$('settingsPanel').hidden=true});document.querySelectorAll('[data-theme-set]').forEach(b=>b.addEventListener('click',()=>{S.theme=b.dataset.themeSet;persist();render();$('settingsPanel').hidden=false}));$('fontLess').addEventListener('click',()=>{S.font=Math.max(15,S.font-1);persist();render();$('settingsPanel').hidden=false});$('fontMore').addEventListener('click',()=>{S.font=Math.min(27,S.font+1);persist();render();$('settingsPanel').hidden=false});$('fontLabel').textContent=S.font+' px';
+window.receiveNativeBackup=(raw)=>{try{let d=JSON.parse(raw);if(d.app!=='Mindful Reader by RK'||!d.data||!Array.isArray(d.data.sessions))throw Error('Invalid');Object.assign(S,d.data);persist();render();notify('Backup restored')}catch{notify('Invalid backup file')}};window.readerBack=()=>{if(view==='reader')switchView('outline');else if(view!=='library')switchView('library');else return false;return true};render();
+})();
+</script></body></html>
