@@ -1,10 +1,12 @@
 <resources>
-  <style name="ReaderTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+  <style name="FocusTheme" parent="android:style/Theme.Material.NoActionBar">
     <item name="android:fontFamily">sans</item>
-    <item name="android:colorAccent">#35675b</item>
-    <item name="android:statusBarColor">#f5f0e6</item>
-    <item name="android:navigationBarColor">#f5f0e6</item>
-    <item name="android:windowLightStatusBar">true</item>
+    <item name="android:statusBarColor">#0c0916</item>
+    <item name="android:navigationBarColor">#0c0916</item>
+    <item name="android:windowLightStatusBar">false</item>
+    <item name="android:colorAccent">#F5C46F</item>
     <item name="android:windowActionModeOverlay">true</item>
   </style>
+  <string name="app_name">RK Focus Lock</string>
+  <string name="accessibility_description">When Focus Lock is enabled, this service detects the name of the app opened and returns you to Home if that app is not approved. It does not read screen text. You can revoke the lock at any time inside RK Focus Lock or disable the service in Android Settings.</string>
 </resources>

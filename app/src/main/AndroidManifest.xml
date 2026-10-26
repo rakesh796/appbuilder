@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-  <application android:label="Mindful Reader by RK" android:icon="@android:drawable/ic_menu_info_details" android:theme="@style/ReaderTheme" android:usesCleartextTraffic="false" android:allowBackup="true" android:supportsRtl="true">
-    <activity android:name=".MainActivity" android:exported="true" android:screenOrientation="unspecified">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
+  <queries><intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent></queries>
+  <application android:allowBackup="false" android:label="RK Focus Lock" android:usesCleartextTraffic="false" android:theme="@style/FocusTheme" android:icon="@drawable/app_icon">
+    <activity android:name=".AppPickerActivity" android:exported="false" android:label="Allowed apps"/>
+    <activity android:name=".MainActivity" android:exported="true" android:label="RK Focus Lock" android:configChanges="keyboardHidden|orientation|screenSize">
+      <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+      <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.HOME"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
     </activity>
+    <service android:name=".FocusAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:exported="true" android:label="RK Focus app blocker">
+      <intent-filter><action android:name="android.accessibilityservice.AccessibilityService"/></intent-filter>
+      <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibility_service_config"/>
+    </service>
   </application>
 </manifest>

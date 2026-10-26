@@ -1,9 +1,6 @@
-# Mindful Reader by RK
+# RK Focus Lock Android app
+A reversible Android Accessibility-based app blocker with a user's embedded 60-day cosmic countdown UI. This project lives on an isolated build branch and does not replace the main branch Mindful Reader project.
 
-A standalone offline Android reading and trading-discipline coach. Original study guides, mantras, Kindle-inspired reader and session tracking.
+Select allowed apps, enable RK Focus Lock Accessibility service in Android Settings, then tap Activate Lock. The service redirects unapproved app launches to Home when blocking is enabled. Revoke Lock disables immediately. Settings and emergency functions remain available.
 
-**Android installation:** Download the `MindfulReaderByRK.apk` from the latest [release](https://github.com/rakesh796/appbuilder/releases/tag/latest) after the workflow finishes.
-
-This is a separate Android application from Quant by RK and The Trader's Mind.
-
-The reading content contains original paraphrased summaries, not the full copyrighted books. No trading orders are placed.
+Not a tamper-proof kiosk. To install, download app-debug.apk from RK-Focus-Lock-APK GitHub Actions build artifact. For signed production releases, configure app signing separately.

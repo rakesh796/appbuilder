@@ -1,16 +1,14 @@
 plugins { id 'com.android.application' }
-
 android {
-    namespace 'com.rk.mindfulreader'
+    namespace 'com.rk.focuslock'
     compileSdk 35
     defaultConfig {
-        applicationId 'com.rk.mindfulreader'
-        minSdk 24
+        applicationId 'com.rk.focuslock'
+        minSdk 26
         targetSdk 34
-        versionCode 2
-        versionName '1.1.0'
+        versionCode 1
+        versionName '1.0.0'
     }
-    buildTypes { release { minifyEnabled false } }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
